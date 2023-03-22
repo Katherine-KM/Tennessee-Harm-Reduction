@@ -1,4 +1,11 @@
 import Head from 'next/head'
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
 
 export default function Home() {
   return (
@@ -10,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1> My blog </h1>
+        <Title> My blog </Title> 
         
       </main>
     </>
