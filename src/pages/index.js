@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Button from '@/components/Button';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -18,7 +19,17 @@ export default function Home() {
       </Head>
       <main>
         <Title> My blog </Title> 
-        
+        <Button
+          size = "lg"
+          bgColor = "black"
+        > What is Harm Reduction? </Button> 
+        <Button
+          size = "sm"
+          bgColor = "white"
+        > Click here to learn more about the meaning of Harm Reduction </Button> 
+        <Button
+          size = "sm"
+        > learn more </Button>
       </main>
     </>
   )
