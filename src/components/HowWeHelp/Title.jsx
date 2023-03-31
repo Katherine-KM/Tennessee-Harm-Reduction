@@ -1,0 +1,47 @@
+import styled from 'styled-components';
+
+
+
+const HelpTitle = styled.h2`
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+`
+
+const HelpSpan = styled.span`
+  color: orange;
+  font-size: 1.5rem;
+  display: inline;
+`
+
+const HelpParagraph = styled.p`
+  color: black;
+  font-size: 1rem;
+  word-wrap: break-word;
+  text-align:center;
+`
+
+const HelpParagrahBox = styled.div`
+ width: 500px
+`
+
+
+const Title = () => {
+  return (
+    <>
+
+    <HelpTitle>
+        <h2>How <HelpSpan>We</HelpSpan> Help</h2>
+    </HelpTitle>
+
+        <HelpParagraph>
+            <p>In Tennessee, we offer efficient services and programmes that benefit the</p>
+            <p>vulnerable and frequently ignored members of society.</p>
+        </HelpParagraph>
+       
+    </>
+  )
+}
+
+export default Title
