@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
     --clr-bgNeutral: rgba(253, 246, 240, 1);
@@ -18,13 +17,20 @@ const GlobalStyles = createGlobalStyle`
     // Secondary Red Text
     --clr-secondary: rgba(198, 76, 75, 1);
 
-    --h1-fs: clamp(1.5rem, 2rem, 2.85rem);
-    --h2-lg-fs: 40px; 
-    --h2-sm-fs: 36px;
-    --p-lg-fs: 20px; 
-    --p-md-fs: 18px;
-    --p-sm-fs: 16px;
-    --h4-link-fs: 24px;
+    // headers + link
+
+    --h1-fs: clamp(1.8rem, 5vw, 2.8rem);
+    --h2-lg-fs: clamp(1.5rem, 5vw, 2.5rem); 
+    --h2-sm-fs: clamp(1.2rem, 5vw, 2.25rem);
+    --h4-link-fs: clamp(1.2rem, 5vw, 1.5rem);
+
+    // Paragraph lg + lg button
+    --p-lg-fs: clamp(1.05rem, 3vw, 1.25rem); 
+
+    --p-md-fs: clamp(1rem, 5vw, 1.125rem);
+
+    // Paragraph sm + sm button
+    --p-sm-fs: 1rem;
 }
 
 main {
