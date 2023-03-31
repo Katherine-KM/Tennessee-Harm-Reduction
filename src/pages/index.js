@@ -24,7 +24,7 @@ export default function Home() {
           bgColor = "black"
         > What is Harm Reduction? </Button> 
         <Button
-          size = "sm"
+          size = "xl"
           bgColor = "white"
         > Click here to learn more about the meaning of Harm Reduction </Button> 
         <Button
