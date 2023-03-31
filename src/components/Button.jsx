@@ -3,8 +3,10 @@ import styled from 'styled-components';
 const ButtonComponent = styled.button`
 font-weight: 700;
 font-size: ${props => props.size === 'lg' ? '17px': '14px'};
+line-height: 24px;
 text-align: center; 
 border-radius: 570px;
+max-width: ${props => props.size === 'lg' ? '280px' : props.size === 'xl' ? '500px': '150px'};
 padding: ${props => 
     props.size === 'lg' ? '10px 25px'
     : props.size === 'sm' ? '6px 21px'
@@ -21,8 +23,6 @@ border: 2px solid ${props =>
     props.bgColor === 'white' ? 'black'
     : props.bgColor === 'black' ? 'black'
     : '#EB8C5B'};
-display: block;
-margin-bottom: 5px; 
 `
 
 const Button = ({ type, className, id, onClick, children, size, bgColor }) => {
