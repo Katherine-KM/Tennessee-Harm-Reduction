@@ -31,15 +31,9 @@ export default function Home() {
           imgHeight= "509"
           imgWidth="729"
           buttonSize='lg'
+          buttonBgColor='var(--clr-primary-400)'
+          buttonFontColor='white'
         />
-        <Title> My blog </Title>
-        <Button size="lg" bgColor="black">
-          What is Harm Reduction?
-        </Button>
-        <Button size="xl" bgColor="white">
-          Click here to learn more about the meaning of Harm Reduction
-        </Button>
-        <Button size="sm"> learn more </Button>
       </main>
     </>
   );

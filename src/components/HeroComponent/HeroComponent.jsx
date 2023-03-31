@@ -3,20 +3,56 @@ import Button from "../Button";
 import Image from "next/image";
 
 const HeroComponentContainer = styled.section`
+  background: linear-gradient(100deg, rgba(0,0,0,0.9), rgba(0,0,0,0.15)), no-repeat url(${props => props.imgSrc});
+  background-size: cover;
+  height: fit-content;
+  display: flex; 
+  width: 100%;
+  min-height: 500px;
+
+  @media (min-width: 1060px) {
+    background-image: none; 
     background-color: #F7D5BA38;
-    display: flex; 
-    width: 100%;
+    min-height: 300px;
+  }
 `;
 
+const HeroContainer1 = styled.div`
+  display: flex;
+  width: 100%;
+  
+  @media (min-width: 1060px) {
+    width: 50%;
+  }
+`
+
+const HeroContainer2 = styled.div`
+  display: none; 
+    
+  @media (min-width: 1060px) {
+    display: block; 
+    width: 50%; 
+  }
+`
+
 const HeroDetailsContainer = styled.div`
-    width: 600px;
-    margin: auto;
+  width: min(95%, 580px);
+  margin: auto;
+  color: white;
+
+  @media (min-width: 1060px) {
+    color: black; 
+  }
+
+  @media (min-width: 400px) {
+    width: min(80%, 580px);
+  }
 `
 
 const HeroH1 = styled.h1`
-  font-size: 40px;
+  font-size: var(--h1-fs);
   font-weight: 700;
-  line-height: 50px;
+  line-height: clamp(2rem, 5vw, 3.2rem); 
 `;
 
 const ColoredSpan = styled.span`
@@ -25,20 +61,33 @@ const ColoredSpan = styled.span`
 `;
 
 const StyledImg = styled(Image)`
-    width: 100%;
-    height: 100%; 
+  width: 100%;
+  height: 100%;
 `
 
 const StyledHeroPText = styled.p`
-    margin: 20px 0 25px 0;
-    line-height: 24px;
-    font-size: 17px;
+  margin: 20px 0 25px 0;
+  line-height: 24px;
+  font-size: var(--p-lg-fs);
 `
 
-const HeroComponent = ({coloredText, h1Text, pText, buttonText, imgSrc, imgAltText, imgHeight, imgWidth, buttonSize}) => {
+const HeroComponent = (
+  {
+    coloredText,
+    h1Text,
+    pText,
+    imgSrc,
+    imgAltText,
+    imgHeight,
+    imgWidth,
+    buttonText,
+    buttonSize,
+    buttonBgColor,
+    buttonFontColor
+}) => {
   return (
-    <HeroComponentContainer>
-      <section style={{ width: "50%", display: "flex" }}>
+    <HeroComponentContainer imgSrc={imgSrc}>
+      <HeroContainer1>
         <HeroDetailsContainer>
           <HeroH1>
             <ColoredSpan> {coloredText} </ColoredSpan>
@@ -47,10 +96,16 @@ const HeroComponent = ({coloredText, h1Text, pText, buttonText, imgSrc, imgAltTe
           <StyledHeroPText>
             {pText}
           </StyledHeroPText>
-          <Button size={buttonSize}> {buttonText} </Button>
+          <Button 
+            size={buttonSize}
+            bgColor={buttonBgColor}
+            fontColor = {buttonFontColor}
+          > 
+            {buttonText}
+          </Button>
         </HeroDetailsContainer>
-      </section>
-      <section style={{ width: "50%" }}>
+      </HeroContainer1>
+      <HeroContainer2>
         <StyledImg
           src={imgSrc}
           alt={imgAltText}
@@ -58,7 +113,7 @@ const HeroComponent = ({coloredText, h1Text, pText, buttonText, imgSrc, imgAltTe
           width={imgWidth}
           layout="intrinsic"
         />
-      </section>
+      </HeroContainer2>
     </HeroComponentContainer>
   );
 };
