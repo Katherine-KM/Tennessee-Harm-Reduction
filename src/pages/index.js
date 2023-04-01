@@ -2,6 +2,8 @@ import Head from "next/head";
 import Button from "@/components/Button";
 import styled from "styled-components";
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
+import HowWeHelp from "@/components/HowWeHelp/HowWeHelp";
+import WhyDoesItMatter from "@/components/WhyDoesItMatter/WhyDoesItMatter";
 
 const Title = styled.h1`
   font-size: 1.5em;

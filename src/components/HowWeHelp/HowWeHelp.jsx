@@ -20,10 +20,12 @@ const HowWeHelp = () => {
     <SectionContainer>
       <Title></Title>
       <FlexContainerRow>
+        {/* this div contains all of the card components */}
+        <div style={{display: 'flex', margin: '0 auto'}} >
       <Card 
       titleOne='Provide' 
       titleTwo='Supplies'
-      style={{color: 'red'}} 
+      fontColor='blue'
       paragraph='A demand-driven or a participant-driven model travel around Tennessee doing outreach harm reduction supply'
       ></Card>
 
@@ -44,6 +46,7 @@ const HowWeHelp = () => {
       titleTwo='Centre'  
       paragraph='Getting the most update information, including getting resources on safer drug use and knowing how to respond in the event of an overdose.'
       ></Card>
+      </div>
       </FlexContainerRow>
     </SectionContainer>
   )

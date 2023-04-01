@@ -14,16 +14,21 @@ const CardContainer = styled.div`
     // background: rgba(247, 213, 186, 0.22);
 `
 
-const Card = ({titleOne, titleTwo, paragraph}) => {
+const H3Title = styled.h3`
+color: ${props => props.fontColor}
+`
+
+const Card = ({titleOne, titleTwo, paragraph, fontColor}) => {
   return (
 
     <CardContainer>
-        <h3 style={{marginTop: '30px'}}>{titleOne}</h3>
-        <h3 style={{marginBottom: '20px'}}>{titleTwo}</h3>
-        <p style={{marginBottom: '20px', fontSize: '14px'}}>{paragraph}</p>
-        <Button 
-        size="sm"
-        > Learn More</Button>
+        <div style={{display: 'flex', flexDirection: 'column', padding: '30px'}}>
+            <H3Title fontColor={fontColor} style={{marginTop: '10px', fontSize: '26px', }}>{titleOne}</H3Title>
+            <h3 style={{marginBottom: '10px', fontSize: '26px', lineHeight: '40px'}}>   {titleTwo}</h3>
+            <p style={{marginBottom: '20px', fontSize: '14px', }}>{paragraph}</p>
+
+            <Button size="sm">Learn More</Button>
+        </div>
     </CardContainer>
 
   )
