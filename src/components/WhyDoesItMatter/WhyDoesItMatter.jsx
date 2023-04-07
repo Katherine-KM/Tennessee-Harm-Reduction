@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 const SectionContainer = styled.section`
   width: 100%;
+  // height: fit-content;
+  // min-height: 561px;
   height: 561px;
   background-color: green;
+//   margin-top:300px;
+  display:flex;
 `
 
 const LeftContainer = styled.div`
@@ -13,12 +18,6 @@ const LeftContainer = styled.div`
   display: flex;
   font-family: 'Montserrat', sans-serif;
 `
-const RightContainer = styled.div`
-  width: 40%;
-  height: 561px;
-  background-color: #000;
-`
-
 const LeftPeopleBox = styled.div`
   width: 50%;
   height: 261px;
@@ -32,7 +31,24 @@ height: 261px;
 //   background-color: #000;
 // border: 3px solid black
 `
-const WhyDoesItMatter = () => {
+
+const RightContainer = styled.div`
+  width: 50%;
+  height: 561px;
+  background-color: red;
+  // display: none;
+`
+
+const StyledImg = styled(Image)`
+  width: 100%;
+  height: 100%;
+`
+const WhyDoesItMatter = ({
+  imgSrc,
+  imgAltText,
+  imgHeight,
+  imgWidth,
+  }) => {
   return (
     <>
     <SectionContainer>
@@ -43,6 +59,7 @@ const WhyDoesItMatter = () => {
           
             {/* This div contains all of the "00 People" tags */}
            <div style={{width: '100%', display: 'flex', marginTop: '10px', marginLeft: '60px'}}>
+            {/* Box for left side 00 People */}
            <LeftPeopleBox>
                 <h3 style={{color: 'var(--clr-primary-400)', fontSize: 'var(--h2-sm-fs)', }}>00 People</h3>
                 <p style={{color: 'var(--clr-primary-400)', marginBottom: '40px', fontSize: '18px'}}>use drugs every year</p>
@@ -51,8 +68,7 @@ const WhyDoesItMatter = () => {
                 <p style={{fontSize: '18px'}}>use drugs every year</p>
             </LeftPeopleBox>
 
-           
-         
+             {/* Box for right side 00 People */}
             <RightPeopleBox>
                 <h3 style={{fontSize: 'var(--h2-sm-fs)'}}>00 People</h3>
                 <p style={{marginBottom: '40px', fontSize: '18px'}}>use drugs every year</p>
@@ -62,12 +78,20 @@ const WhyDoesItMatter = () => {
             </RightPeopleBox>
            </div>
             </div>
-           
-       
         </LeftContainer>
-        {/* <RightContainer></RightContainer> */}
-    {/* <div>WhyDoesItMatter</div> */}
+
+        <RightContainer>
+          <StyledImg
+            src={imgSrc}
+            alt={imgAltText}
+            height={imgHeight}
+            width={imgWidth}
+           >
+          </StyledImg>
+        </RightContainer>
     </SectionContainer>
+    
+    
     
     </>
   )

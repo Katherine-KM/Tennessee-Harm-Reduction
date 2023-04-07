@@ -10,7 +10,7 @@ border-radius: 570px;
 max-width: ${props => props.size === 'lg' ? '320px' : props.size === 'xl' ? '500px': '150px'};
 padding: ${props => 
     props.size === 'lg' ? '10px 25px'
-    : props.size === 'sm' ? '6px 21px'
+    : props.size === 'sm' ? '4px 18px'
     : '5px 10px'}; 
 color: ${props => props.fontColor};
 background-color: ${props => props.bgColor};

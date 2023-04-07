@@ -52,7 +52,7 @@ const HeroDetailsContainer = styled.div`
 const HeroH1 = styled.h1`
   font-size: var(--h1-fs);
   font-weight: 700;
-  line-height: clamp(2rem, 5vw, 3.2rem); 
+  line-height: clamp(3.2rem, 5vw, 5.1rem); 
 `;
 
 const ColoredSpan = styled.span`

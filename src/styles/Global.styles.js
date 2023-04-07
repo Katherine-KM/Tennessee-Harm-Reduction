@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
 :root {
+    
     --clr-bgNeutral: rgba(253, 246, 240, 1);
 
     // Button & Darker Text
@@ -19,18 +20,30 @@ const GlobalStyles = createGlobalStyle`
 
     // headers + link
 
-    --h1-fs: clamp(1.8rem, 5vw, 2.8rem);
-    --h2-lg-fs: clamp(1.5rem, 5vw, 2.5rem); 
-    --h2-sm-fs: clamp(1.2rem, 5vw, 2.25rem);
-    --h4-link-fs: clamp(1.2rem, 5vw, 1.5rem);
+    // 28.8px - 45px
+    --h1-fs: clamp(2.9rem, 5vw, 4.5rem);
+    // 24px - 40px
+    --h2-lg-fs: clamp(2.4rem, 5vw, 4rem);
+    // 19px - 36px 
+    --h2-sm-fs: clamp(1.9rem, 5vw, 3.6rem);
+    // 19px - 24px
+    --h4-link-fs: clamp(1.9rem, 5vw, 2.4rem);
 
     // Paragraph lg + lg button
-    --p-lg-fs: clamp(1.05rem, 3vw, 1.25rem); 
-
-    --p-md-fs: clamp(1rem, 5vw, 1.125rem);
+    // 17px - 20px
+    --p-lg-fs: clamp(1.7rem, 3vw, 2rem); 
+    // 16px - 18px
+    --p-md-fs: clamp(1.6rem, 5vw, 1.8rem);
 
     // Paragraph sm + sm button
-    --p-sm-fs: 1rem;
+    //16px 
+    --p-sm-fs: 1.6rem;
+
+    font-size: 62.5%
+}
+
+root{
+    
 }
 
 main {
@@ -66,6 +79,7 @@ body{
     text-rendering: optimizeSpeed;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
 }
 `
 
