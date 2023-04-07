@@ -2,6 +2,8 @@ import Head from "next/head";
 import Button from "@/components/Button";
 import styled from "styled-components";
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
+import HowWeHelp from "@/components/HowWeHelp/HowWeHelp";
+import WhyDoesItMatter from "@/components/WhyDoesItMatter/WhyDoesItMatter";
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -18,6 +20,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <main>
         <HeroComponent 
           coloredText="TENNESSEE'S #1"
@@ -34,6 +37,13 @@ export default function Home() {
           buttonBgColor='var(--clr-primary-400)'
           buttonFontColor='white'
         />
+        <HowWeHelp></HowWeHelp>
+        <WhyDoesItMatter
+        imgSrc="/WDIMatter.jpg"
+        imgAltText="Why does it matter Img"
+        imgHeight="3783"
+        imgWidth="2553"
+        ></WhyDoesItMatter>
       </main>
     </>
   );
