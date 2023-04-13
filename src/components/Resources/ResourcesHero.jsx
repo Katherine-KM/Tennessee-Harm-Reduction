@@ -7,7 +7,8 @@ const HeroComponentContainer = styled.section`
   background-size: cover;
   height: fit-content;
   display: flex; 
-  width: 100%;
+//   width: 100%;
+  // max-height: 500px;
   min-height: 500px;
 
   @media (min-width: 1060px) {
@@ -28,7 +29,8 @@ const HeroContainer1 = styled.div`
 
 const HeroContainer2 = styled.div`
   display: none; 
-    
+  height: 500px;
+   
   @media (min-width: 1060px) {
     display: block; 
     width: 50%; 
@@ -52,18 +54,29 @@ const HeroDetailsContainer = styled.div`
 const HeroH1 = styled.h1`
   font-size: var(--h1-fs);
   font-weight: 700;
-  line-height: clamp(3.2rem, 5vw, 5.1rem); 
+  line-height: clamp(3.2rem, 5vw, 5.1rem);
+  display: inline; 
 `;
 
-const ColoredSpan = styled.span`
+
+
+const OrangeSpan = styled.span`
+font-size: var(--h1-fs);
+font-weight: 700;
+line-height: clamp(3.2rem, 5vw, 5.1rem);
   color: #f3b088;
-  display: block;
-`;
 
+`;
 
 const StyledImg = styled(Image)`
   width: 100%;
   height: 100%;
+`
+const HeroH2 = styled.h1`
+  font-size: var(--h1-fs);
+  font-weight: 700;
+  line-height: clamp(3.2rem, 5vw, 5.1rem); 
+  display: inline;
 `
 
 const StyledHeroPText = styled.p`
@@ -72,10 +85,11 @@ const StyledHeroPText = styled.p`
   font-size: var(--p-lg-fs);
 `
 
-const HeroComponent = (
+const ResourcesHero = (
   {
     coloredText,
     h1Text,
+    h1Text2,
     pText,
     imgSrc,
     imgAltText,
@@ -90,13 +104,12 @@ const HeroComponent = (
     <HeroComponentContainer imgSrc={imgSrc}>
       <HeroContainer1>
         <HeroDetailsContainer>
-          <HeroH1>
-            <ColoredSpan> {coloredText} </ColoredSpan>
-            {h1Text}
-          </HeroH1>
-          <StyledHeroPText>
-            {pText}
-          </StyledHeroPText>
+          
+          <HeroH1>{h1Text}</HeroH1>
+
+          <OrangeSpan> {coloredText} </OrangeSpan>
+          <HeroH2>{h1Text2}</HeroH2>
+          <StyledHeroPText>{pText}</StyledHeroPText>
           <Button 
             size={buttonSize}
             bgColor={buttonBgColor}
@@ -112,11 +125,11 @@ const HeroComponent = (
           alt={imgAltText}
           height={imgHeight}
           width={imgWidth}
-          layout="intrinsic"
+          
         />
       </HeroContainer2>
     </HeroComponentContainer>
   );
 };
 
-export default HeroComponent;
+export default ResourcesHero;
