@@ -7,14 +7,8 @@ import Button from '../Button';
 const SectionContainer = styled.section`
 background-color: #fff;
 display: grid;
-// height: 561px;
-// border: 5px blue solid;
-// margin-top: 4rem;
-
 
   @media (min-width: 1158px){
-    // display:grid;
-
     margin: auto;
     grid-column: 1/4;
     grid-row: 1/4;
@@ -24,27 +18,21 @@ display: grid;
   `
   
   const FlexContainerRow = styled.div`
-  // display:flex;
-  // margin: 0 auto;
+
   `
   
   const CardFlexContainer = styled.div`
   
-  
-  // display: flex; 
   display:grid;
   grid-template-columns: 270px 270px;
   justify-content: center;
   margin: 0 auto;
   max-width: 90%;
-  // border: 3px solid red;
   column-gap: 2.5rem;
   row-gap: 1.5rem;
 
   @media (min-width: 1158px){
-    // display:grid;
     grid-template-columns: repeat(4, 1fr);
-    // margin: auto;
     column-gap: 5rem;
     max-width: 80%;
     grid-column: 1/4;
@@ -54,10 +42,11 @@ display: grid;
 
 const HowWeHelp = () => {
   return (
-    <SectionContainer>
+    <>
+          <SectionContainer>
       <Title></Title>
       <FlexContainerRow>
-        {/* this div contains all of the card components */}
+      
         <CardFlexContainer>
    
       <Card 
@@ -91,6 +80,7 @@ const HowWeHelp = () => {
       
       </FlexContainerRow>
     </SectionContainer>
+    </>
   )
 }
 

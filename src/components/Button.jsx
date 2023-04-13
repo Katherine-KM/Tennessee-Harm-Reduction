@@ -23,7 +23,16 @@ border: 2px solid ${props =>
     }
 `
 
-const Button = ({ type, className, id, onClick, children, size, bgColor, fontColor }) => {
+const Button = ({ 
+  type, 
+  className, 
+  id, 
+  onClick, 
+  children, 
+  size, 
+  bgColor, 
+  fontColor 
+}) => {
   return (
     <ButtonComponent
       type={type ? type : "button"}

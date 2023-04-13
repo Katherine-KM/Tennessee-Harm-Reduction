@@ -28,7 +28,12 @@ const H3Title2 = styled(H3Title)`
 `
 
 
-const Card = ({titleOne, titleTwo, paragraph, fontColor}) => {
+const Card = ({
+  titleOne, 
+  titleTwo, 
+  paragraph, 
+  fontColor
+}) => {
   return (
 
     <CardContainer>
