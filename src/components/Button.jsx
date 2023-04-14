@@ -21,6 +21,7 @@ border: 2px solid ${props =>
     &:hover { 
       cursor: pointer;
     }
+${props => props.styling}
 `
 
 const Button = ({ 
@@ -31,7 +32,8 @@ const Button = ({
   children, 
   size, 
   bgColor, 
-  fontColor 
+  fontColor,
+  styling
 }) => {
   return (
     <ButtonComponent
@@ -42,6 +44,7 @@ const Button = ({
       size={size}
       bgColor={bgColor}
       fontColor={fontColor}
+      styling={styling}
     >
       {children}
     </ButtonComponent>
