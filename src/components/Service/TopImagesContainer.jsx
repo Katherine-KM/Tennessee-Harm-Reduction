@@ -73,7 +73,7 @@ const TopImagesContainer = ({
     <MainTopContainer>
         <LeftHalfContainer>
         <InnerImageContainerComponent
-                h1Text='Provide Supply'
+                h1Text='Provide Supplies'
                 pText="A demand-driven or a participant-driven model travel around  Tennessee doing outreach harm reduction supply"
                 buttonSize='xl'
                 buttonBgColor='orange'
