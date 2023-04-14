@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Button from "../Button";
 import Image from "next/image";
+import InnerImageContainerComponent from "./InnerImageContainerComponent";
 
 const MainTopContainer = styled.div`
     display:flex;
@@ -71,37 +72,27 @@ const TopImagesContainer = ({
   
     <MainTopContainer>
         <LeftHalfContainer>
-            <InnerImageContainer>
-                <TextContainer>
-                    <InnerTextContainer>
-                    <h1 style={{fontSize: 'var(--h1-fs)',marginBottom: '20px'}}>{h1Text1}</h1>
-
-                    <p style={{fontSize: 'var(--p-md-fs)', marginBottom: '40px'}}>{paraText1}</p>
-                        <Button
-                       size={buttonSize}
-                       BgColor={buttonBgColor}
-                       FontColor={buttonFontColor}
-                        >fdsfsfds</Button>
-                    </InnerTextContainer>
-                </TextContainer>
-            </InnerImageContainer>
+        <InnerImageContainerComponent
+                h1Text='Provide Supply'
+                pText="A demand-driven or a participant-driven model travel around  Tennessee doing outreach harm reduction supply"
+                buttonSize='xl'
+                buttonBgColor='orange'
+                buttonFontColor='white'
+                buttonText='FREE access of Syringes'
+                buttonText2='FREE access of Naloxone'
+            />
         </LeftHalfContainer>
 
         <RightHalfContainer>
-            <InnerImageContainer>
-                <TextContainer>
-                <InnerTextContainer>
-                    <h1 style={{fontSize: 'var(--h1-fs)',marginBottom: '20px'}}>{h1Text2}</h1>
-
-                    <p style={{fontSize: 'var(--p-md-fs)', marginBottom: '40px'}}>{paraText2}</p>
-                        <Button
-                       size={buttonSize}
-                       BgColor={buttonBgColor}
-                       FontColor={buttonFontColor}
-                        >fdsfsfds</Button>
-                    </InnerTextContainer>
-                </TextContainer>
-            </InnerImageContainer>
+            <InnerImageContainerComponent
+                h1Text = 'Supply by Mail'
+                pText = "Sending free NARCAN kits, syringes, and fentanyl test strips by mail within whole United state to improving the health and welfare of Tennesseans who use drugs."
+                buttonSize='xl'
+                buttonBgColor='orange'
+                buttonFontColor='white'
+                buttonText='Basic Packages'
+                buttonText2=''
+            />
         </RightHalfContainer>
     </MainTopContainer>
 
