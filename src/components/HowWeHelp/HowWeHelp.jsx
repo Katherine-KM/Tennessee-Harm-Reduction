@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import Title from './Title';
 import Card from './Card';
 import Button from '../Button';
+import { cardArray } from './HWHelpCardArray'
+
+
 
 
 const SectionContainer = styled.section`
@@ -37,45 +40,51 @@ display: grid;
 `
 
 const HowWeHelp = () => {
+
+//   const cardArray = [
+//     {
+//       titleOne:'Provide' ,
+//       titleTwo:'Supplies',
+//       fontColor:'var(--clr-secondary)',
+//       paragraph: 'A demand-driven or a, participant-driven model travel around Tennessee doing outreach harm reduction supply',
+//     },
+//     {
+//         titleOne:'Supplies By',
+//         titleTwo:'Mail',
+//         fontColor:'var(--clr-primary-400)',
+//         paragraph: 'Sending free NARCAN kits, syringes, and fentanyl test strips by mail within whole United state.',
+//       },
+//       {
+//         titleOne:'Treatment',
+//         titleTwo:'Program',
+//         fontColor:'var(--clr-secondary)',
+//         paragraph: 'Connect with different supporting programs and committee around Tennessee regarding harm reduction support.',
+//       },
+//       {
+//         titleOne:'Information',
+//         titleTwo:'Centre',
+//         fontColor:'var(--clr-primary-400)' ,
+//         paragraph: 'Getting the most update information, including getting resources on safer drug use and knowing how to respond in the event of an overdose.',
+//       },
+// ]
+
   return (
     <>
       <Title></Title>
-          <SectionContainer>
-      
-      
-        <CardFlexContainer>
-   
-      <Card 
-      titleOne='Provide' 
-      titleTwo='Supplies'
-      fontColor='var(--clr-secondary)' 
-      paragraph='A demand-driven or a participant-driven model travel around Tennessee doing outreach harm reduction supply'
-      ></Card>
+        <SectionContainer>
+          <CardFlexContainer>
 
-      <Card 
-      titleOne='Supplies By' 
-      titleTwo='Mail' 
-      fontColor='var(--clr-primary-400)'
-      paragraph='Sending free NARCAN kits, syringes, and fentanyl test strips by mail within whole United state.'
-      ></Card>
-
-      <Card 
-      titleOne='Treatment' 
-      titleTwo='Program'
-      fontColor='var(--clr-secondary)' 
-      paragraph='Connect with different supporting programs and committee around Tennessee regarding harm reduction support.'
-      ></Card>
-
-      <Card 
-      titleOne='Information' 
-      titleTwo='Centre'
-      fontColor='var(--clr-primary-400)'  
-      paragraph='Getting the most update information, including getting resources on safer drug use and knowing how to respond in the event of an overdose.'
-      ></Card>
-      </CardFlexContainer>
-      
-      
-    </SectionContainer>
+            {cardArray.map(card => (
+              <Card 
+              titleOne= {card.titleOne }
+              titleTwo={card.titleTwo }
+              fontColor={card.fontColor } 
+              paragraph={card.paragraph }
+              >
+              </Card>
+            ))}
+          </CardFlexContainer>
+        </SectionContainer>
     </>
   )
 }
