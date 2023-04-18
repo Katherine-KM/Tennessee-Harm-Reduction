@@ -2,21 +2,14 @@ import styled from 'styled-components';
 import Button from '../Button';
 
 const CardContainer = styled.div`
-    display: flex;
-    // flex-direction: column;
-    // width: 260px;
-    
+    display: flex;   
     height: 320px;
-    // margin-right: 38px;
+
     background-color: var(--clr-bgNeutral);
     border-radius: 5px;
     text-align: center;
     letter-spacing: -0.015em;
-    // background: rgba(247, 213, 186, 0.22);
-    position: relative;
-    
-
-    
+    position: relative;  
 `
 
 const H3Title = styled.h3`
