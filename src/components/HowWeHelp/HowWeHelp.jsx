@@ -9,15 +9,11 @@ background-color: #fff;
 display: grid;
 
   @media (min-width: 1158px){
-    margin: auto;
+    padding-bottom: 4rem;
     grid-column: 1/4;
     grid-row: 1/4;
-    padding-bottom: 4rem;
+    margin: auto;
   }
-  
-  `
-  
-  const FlexContainerRow = styled.div`
 
   `
   
@@ -43,9 +39,9 @@ display: grid;
 const HowWeHelp = () => {
   return (
     <>
-          <SectionContainer>
       <Title></Title>
-      <FlexContainerRow>
+          <SectionContainer>
+      
       
         <CardFlexContainer>
    
@@ -60,7 +56,7 @@ const HowWeHelp = () => {
       titleOne='Supplies By' 
       titleTwo='Mail' 
       fontColor='var(--clr-primary-400)'
-      paragraph='Sending free NARCAN kits, syringes, and fentanyl test strips by mail within whole United state .'
+      paragraph='Sending free NARCAN kits, syringes, and fentanyl test strips by mail within whole United state.'
       ></Card>
 
       <Card 
@@ -78,7 +74,7 @@ const HowWeHelp = () => {
       ></Card>
       </CardFlexContainer>
       
-      </FlexContainerRow>
+      
     </SectionContainer>
     </>
   )
