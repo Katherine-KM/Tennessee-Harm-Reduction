@@ -23,9 +23,9 @@ const GlobalStyles = createGlobalStyle`
     // 28.8px - 45px
     --h1-fs: clamp(2.9rem, 5vw, 4.5rem);
     // 24px - 40px
-    --h2-lg-fs: clamp(2.4rem, 5vw, 4rem);
+    --h2-fs: clamp(2.4rem, 5vw, 4rem);
     // 19px - 36px 
-    --h2-sm-fs: clamp(1.9rem, 5vw, 3.6rem);
+    --h3-fs: clamp(1.9rem, 5vw, 3.6rem);
     // 19px - 24px
     --h4-link-fs: clamp(1.9rem, 5vw, 2.4rem);
 
@@ -42,15 +42,37 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%
 }
 
-root{
-    
-}
-
 main {
     max-width: 1600px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 700; 
+}
+
+h1 {
+    // 28.8px - 45px
+    font-size: var(--h1-fs);
+    line-height: clamp(3.2rem, 5vw, 5.1rem); 
+}
+
+h2 {
+    // 24px - 40px
+    font-size: var(--h2-fs);
+    line-height: clamp(3.1rem, 5vw, 5rem); 
+}
+
+h3 {
+    // 19px - 36px 
+    font-size: var(--h3-fs);
+}
+
+a, h4 {
+    // 19px - 24px
+    font-size: var(--h4-link-fs)
 }
 
 // Reset
