@@ -12,12 +12,32 @@ const CardContainer = styled.div`
     position: relative;  
 `
 
+const CardInnerContainer = styled.div`
+
+display: flex; 
+flex-direction: column; 
+padding: 20px
+`
+
 const H3Title = styled.h3`
 color: ${props => props.fontColor};
-font-size: 26px;
+margin-top: 10px; 
+font-size: var(--h4-link-fs);
 `
 const H3Title2 = styled(H3Title)`
+margin-bottom: 6px;
+line-height: 40px; 
+font-size: var(--h4-link-fs);
+`
 
+const CardParagraph = styled.p`
+margin-bottom: 20px; 
+font-size: var(--p-sm-fs);
+`
+
+const ButtonContainer = styled.div`
+  bottom:40px; 
+  right: 60px;
 `
 
 
@@ -30,18 +50,22 @@ const Card = ({
   return (
 
     <CardContainer>
-        <div style={{display: 'flex', flexDirection: 'column', padding: '20px'}}>
+      <CardInnerContainer>
+            <H3Title fontColor={fontColor}>{titleOne}</H3Title>
 
-            <H3Title fontColor={fontColor} style={{marginTop: '10px', fontSize: 'var(--h4-link-fs)' }}>{titleOne}</H3Title>
+            <H3Title2 fontColor={fontColor}>{titleTwo}</H3Title2>
 
-            <H3Title2 fontColor={fontColor} style={{marginBottom: '6px', lineHeight: '40px', fontSize: 'var(--h4-link-fs)'}}>{titleTwo}</H3Title2>
+            <CardParagraph>{paragraph}</CardParagraph>
 
-            <p style={{marginBottom: '20px', fontSize: 'var(--p-sm-fs)' }}>{paragraph}</p>
-
-            <div style={{  bottom:'40px', right: '60px' }}>
-            <Button size="sm" bgColor='var(--clr-primary-400)' fontColor='white'>learn more</Button>
-            </div>
-        </div>
+            <ButtonContainer>
+            <Button 
+            size="sm" 
+            bgColor='var(--clr-primary-400)' fontColor='white'
+            >learn more
+            </Button>
+            </ButtonContainer>
+            </CardInnerContainer>
+   
     </CardContainer>
 
   )
