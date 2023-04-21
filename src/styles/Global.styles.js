@@ -29,15 +29,13 @@ const GlobalStyles = createGlobalStyle`
     // 19px - 24px
     --h4-link-fs: clamp(1.9rem, 5vw, 2.4rem);
 
-    // Paragraph lg + lg button
+    // Paragraph lg
     // 17px - 20px
     --p-lg-fs: clamp(1.7rem, 3vw, 2rem); 
+
+    // Paragraph md
     // 16px - 18px
     --p-md-fs: clamp(1.6rem, 5vw, 1.8rem);
-
-    // Paragraph sm + sm button
-    //16px 
-    --p-sm-fs: 1.6rem;
 
     font-size: 62.5%
 }
@@ -73,6 +71,18 @@ h3 {
 a, h4 {
     // 19px - 24px
     font-size: var(--h4-link-fs)
+}
+
+.p-lg {
+    // 17px - 20px
+    font-size: var(--p-lg-fs)
+    line-height: clamp(2.2rem, 5vw, 2.4rem); 
+}
+
+.p-md {
+    // 16px - 18px
+    font-size: var(--p-md-fs)
+    line-height: clamp(2rem, 5vw, 2.2rem); 
 }
 
 // Reset
