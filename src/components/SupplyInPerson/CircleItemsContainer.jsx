@@ -3,16 +3,10 @@ import Button from "../Button";
 import Image from "next/image";
 
 
-const OutterContainer = styled.div`
-    width: 100%;
-    height: 2000px;
-    border: 3px solid red;
-`
-
 const OutterCircleContainer = styled.div`
 width: 100%;
 height: 1700px;
-border: 3px solid blue;
+border: 8px solid blue;
 
 display:flex;
 flex-direction: column;
@@ -25,37 +19,39 @@ height: 200px;
 border-radius: 50%;
 background-color: green;
 
-stroke: white;
-stroke-width: 5px;
+// stroke: white;
+// stroke-width: 5px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+background: url('/SIPImgs/InPersonArrange.png')
 
 `
 
 const InnerCircleItem = styled.div`
-width: 150px;
-height: 150px;
+width: 170px;
+height: 170px;
 // border: 3px red solid
 border-radius: 50%;
-background-color: red;
-
-stroke: white;
-stroke-width: 5px;
-margin: 23px auto;
+// background: #EB8C5BCC;
 
 `
 
 const CircleItemsContainer = () => {
   return (
     <>
-        <OutterContainer>
+        
             <OutterCircleContainer>
                 <CircleItem>
                     <InnerCircleItem></InnerCircleItem>
                 </CircleItem>
                 <CircleItem></CircleItem>
                 <CircleItem></CircleItem>
-                <CircleItem></CircleItem>
+                
             </OutterCircleContainer>
-        </OutterContainer>
+       
     </>
   )
 }
