@@ -21,12 +21,12 @@ padding: 20px
 
 const H3Title = styled.h3`
 color: ${props => props.fontColor};
-margin-top: 10px; 
+// margin-top: 10px; 
 font-size: var(--h4-link-fs);
 `
 const H3Title2 = styled(H3Title)`
 margin-bottom: 6px;
-line-height: 40px; 
+line-height: 42px; 
 font-size: var(--h4-link-fs);
 `
 
@@ -58,11 +58,7 @@ const Card = ({
             <CardParagraph>{paragraph}</CardParagraph>
 
             <ButtonContainer>
-            <Button 
-            size="sm" 
-            bgColor='var(--clr-primary-400)' fontColor='white'
-            >learn more
-            </Button>
+            <Button>learn more</Button>
             </ButtonContainer>
             </CardInnerContainer>
    

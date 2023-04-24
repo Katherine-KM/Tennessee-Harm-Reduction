@@ -10,15 +10,13 @@ const HelpTitle = styled.div`
 `
 
 const HelpTitleH2 = styled.h2`
-
-  fontSize: var(--h2-sm-fs);
   marginTop: 50px;
   marginBottom: 10px;
  
 `
 
 const HelpSpan = styled.span`
-  color: orange;
+  color: var(--clr-primary-200);
   display: inline;
   font-size: var(--h2-fs);
   
@@ -32,15 +30,12 @@ const HelpParagraph = styled.div`
 `
 
 const HelpParagraphTextTop = styled.p`
-  font-size: var(--p-md-fs);
   margin-top: 15px;
 `
 // In Tennessee, we offer efficient services and programmes that benefit the
 const HelpParagraphTextBottom = styled.p`
 
   margin-bottom: 30px;
-  line-height: 26px;
-  font-size: var(--p-md-fs);
   
 `
 
@@ -57,11 +52,11 @@ const Title = () => {
     </HelpTitle>
 
         <HelpParagraph>
-           <HelpParagraphTextTop>
+           <HelpParagraphTextTop className='p-md'>
            In Tennessee, we offer efficient services and programmes that benefit the
            </HelpParagraphTextTop>
 
-            <HelpParagraphTextBottom>
+            <HelpParagraphTextBottom className='p-md'>
             vulnerable and frequently ignored members of society.
             </HelpParagraphTextBottom>
         </HelpParagraph>
