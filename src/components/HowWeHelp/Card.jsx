@@ -21,18 +21,24 @@ padding: 20px
 
 const H3Title = styled.h3`
 color: ${props => props.fontColor};
-margin-top: 10px; 
+// margin-top: 10px; 
 font-size: var(--h4-link-fs);
 `
 const H3Title2 = styled(H3Title)`
 margin-bottom: 6px;
-line-height: 40px; 
+line-height: 42px; 
 font-size: var(--h4-link-fs);
 `
 
 const CardParagraph = styled.p`
-margin-bottom: 20px; 
+
 font-size: var(--p-sm-fs);
+`
+
+const CardParagraphContainer = styled.div`
+margin-bottom: 20px; 
+width: 200px;
+height: 100px;
 `
 
 const ButtonContainer = styled.div`
@@ -48,26 +54,25 @@ const Card = ({
   fontColor
 }) => {
   return (
-
+  <>
     <CardContainer>
       <CardInnerContainer>
             <H3Title fontColor={fontColor}>{titleOne}</H3Title>
 
             <H3Title2 fontColor={fontColor}>{titleTwo}</H3Title2>
 
-            <CardParagraph>{paragraph}</CardParagraph>
-
+            <CardParagraphContainer>
+              <CardParagraph>{paragraph}</CardParagraph>
+            </CardParagraphContainer>
+            
             <ButtonContainer>
-            <Button 
-            size="sm" 
-            bgColor='var(--clr-primary-400)' fontColor='white'
-            >learn more
-            </Button>
+              <Button>learn more</Button>
             </ButtonContainer>
-            </CardInnerContainer>
-   
-    </CardContainer>
 
+        </CardInnerContainer>
+
+    </CardContainer>
+    </>
   )
 }
 

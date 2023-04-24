@@ -3,40 +3,64 @@ import Image from 'next/image';
 
 const SectionContainer = styled.section`
   width: 100%;
-  // height: fit-content;
-  // min-height: 561px;
-  height: 561px;
   background-color: green;
-//   margin-top:300px;
   display:flex;
+
+`
+
+const SectionInnerContainer = styled.div`
+  // border: 5px solid purple;
+  // max-height: 400px;
+  // margin: auto;
+  width: 100%;
+  margin-left: 100px;
+  margin-top: 100px;
+ 
+  display:flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 `
 
 const LeftContainer = styled.div`
-  width: 50%;
-  height: 561px;
-  background-color: #F7D5BA;
-  display: flex;
   font-family: 'Montserrat', sans-serif;
-`
-const LeftPeopleBox = styled.div`
+  background-color: var(--clr-bgNeutral);
+
   width: 50%;
-  height: 261px;
-//   background-color: #000;
-//   border: 3px solid black
+  display: flex;
 `
 
-const RightPeopleBox = styled.div`
-width: 50%;
-height: 261px;
-//   background-color: #000;
-// border: 3px solid black
+const LeftContainerH2 = styled.h2`
+  margin-bottom: 50px;
+
+`
+
+const LeftContainerSpan = styled.span`
+  color: var(--clr-primary-400);
+`
+
+const MainDataBoxContainer = styled.div`
+width: 100%;
+display: flex;
+margin-top: 10px;
+`
+const DataBox = styled.div`
+  width: 50%;
+`
+
+const DataBoxContainer = styled.div`
+  margin-bottom: 50px;
+  // margin-left: 100px;
+  gap: 10px 20px;
+`
+
+const OrangeDataBoxContainer = styled(DataBoxContainer)`
+color: var(--clr-primary-400);
 `
 
 const RightContainer = styled.div`
   width: 50%;
-  height: 561px;
   background-color: red;
-  // display: none;
 `
 
 const StyledImg = styled(Image)`
@@ -51,33 +75,53 @@ const WhyDoesItMatter = ({
   }) => {
   return (
     <>
+    
     <SectionContainer>
+      
         <LeftContainer>
+          <SectionInnerContainer>
             {/* This div contains the entire "Why does it matter" container */}
-            <div style={{width: '100%', display: 'flex', flexDirection: 'column',marginLeft: '30px'}}>
-            <h2 style={{fontSize: 'var(--h2-sm-fs)', padding: '60px', fontSize: 'var(--h2-lg-fs)'}}>Why does it <span style={{color: 'var(--clr-primary-400)'}}>matter</span></h2>
-          
+           
+              <LeftContainerH2>
+              Why does it <LeftContainerSpan>Matter</LeftContainerSpan>
+              </LeftContainerH2>
+           
             {/* This div contains all of the "00 People" tags */}
-           <div style={{width: '100%', display: 'flex', marginTop: '10px', marginLeft: '60px'}}>
+            {/* MainDataBoxContainer */}
+            <MainDataBoxContainer>
+       
             {/* Box for left side 00 People */}
-           <LeftPeopleBox>
-                <h3 style={{color: 'var(--clr-primary-400)', fontSize: 'var(--h2-sm-fs)', }}>00 People</h3>
-                <p style={{color: 'var(--clr-primary-400)', marginBottom: '40px', fontSize: '18px'}}>use drugs every year</p>
-
-                <h3 style={{fontSize: 'var(--h2-sm-fs)'}}>00 People</h3>
-                <p style={{fontSize: '18px'}}>use drugs every year</p>
-            </LeftPeopleBox>
+           <DataBox>
+                <OrangeDataBoxContainer>
+                <h3>00 People</h3>
+                <p className='p-md'>use drugs every year</p>
+                </OrangeDataBoxContainer>
+               
+                <DataBoxContainer>
+                <h3>00 People</h3>
+                <p className='p-md'>use drugs every year</p>
+                </DataBoxContainer>
+                
+            </DataBox>
 
              {/* Box for right side 00 People */}
-            <RightPeopleBox>
-                <h3 style={{fontSize: 'var(--h2-sm-fs)'}}>00 People</h3>
-                <p style={{marginBottom: '40px', fontSize: '18px'}}>use drugs every year</p>
+             <DataBox>
+                
+                <DataBoxContainer>
+                <h3>00 People</h3>
+                <p className='p-md'>use drugs every year</p>
+                </DataBoxContainer>
 
-                <h3 style={{color: 'var(--clr-primary-400)', fontSize: 'var(--h2-sm-fs)'}}>00 People</h3>
-                <p style={{color: 'var(--clr-primary-400)', fontSize: '18px'}}>use drugs every year</p>
-            </RightPeopleBox>
-           </div>
-            </div>
+                <OrangeDataBoxContainer>
+                <h3>00 People</h3>
+                <p className='p-md'>use drugs every year</p>
+                </OrangeDataBoxContainer>
+                
+              </DataBox>
+              </MainDataBoxContainer>
+        
+          
+            </SectionInnerContainer>
         </LeftContainer>
 
         <RightContainer>
@@ -89,9 +133,8 @@ const WhyDoesItMatter = ({
            >
           </StyledImg>
         </RightContainer>
+     
     </SectionContainer>
-    
-    
     
     </>
   )

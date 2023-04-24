@@ -66,7 +66,7 @@ body{
 
     // Paragraph md
     // 16px - 18px
-    --p-md-fs: clamp(1.6rem, 3vw, 1.8rem);
+    --p-md-fs: clamp(1.2rem, 1.5vw, 1.8rem);
 }
 
 main {
@@ -114,7 +114,7 @@ p, button {
 
 .p-md {
     // 16px - 18px
-    font-size: var(--p-md-fs)
+    font-size: var(--p-md-fs);
     line-height: clamp(2rem, 5vw, 2.2rem); 
 }
 `;
