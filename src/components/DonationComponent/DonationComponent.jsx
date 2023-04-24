@@ -1,4 +1,4 @@
-import { DonationComponentContainer, RightWrapper, LeftWrapper, WrapperDetails, WrapperPayment, StyledP, StyledColoredTitle, StyledTitle, StyledInput, StyledSpan, StyledButton} from "./DonationComponent.styles"
+import { DonationComponentContainer, RightWrapper, LeftWrapper, WrapperDetails, WrapperPayment, StyledP, StyledColoredTitle, StyledTitle, StyledInput, StyledSpan, StyledButton, ImageWrapper, StyledImage} from "./DonationComponent.styles"
 
 const DonationComponent = ({text}) => {
   return (
@@ -16,7 +16,11 @@ const DonationComponent = ({text}) => {
                 <StyledButton>Donate</StyledButton>
             </WrapperPayment>
         </LeftWrapper>
-        <RightWrapper></RightWrapper>
+        <RightWrapper>
+            <ImageWrapper>
+                <StyledImage src={'/donateimage.png'} width={393} height={277}></StyledImage>
+            </ImageWrapper>
+        </RightWrapper>
     </DonationComponentContainer>
   )
 }

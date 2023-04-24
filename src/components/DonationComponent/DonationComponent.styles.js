@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ButtonComponent } from "../Button";
+import Image from "next/image";
 
 const DonationComponentContainer = styled.section`
     max-width: 90%;
@@ -11,6 +12,7 @@ const DonationComponentContainer = styled.section`
 
 const RightWrapper = styled.div`
     width: 48%; 
+    height: 72%;
 `
 
 const LeftWrapper = styled.div`
@@ -60,4 +62,12 @@ const StyledButton = styled(ButtonComponent)`
     letter: -1.5%;
 `
 
-export {DonationComponentContainer, RightWrapper, LeftWrapper, WrapperDetails, WrapperPayment, StyledP, StyledColoredTitle, StyledTitle, StyledInput, StyledSpan, StyledButton};
+const ImageWrapper = styled.div`
+`
+
+const StyledImage = styled(Image)`
+    display: block; 
+    margin: 0 auto; 
+`
+
+export {DonationComponentContainer, RightWrapper, LeftWrapper, WrapperDetails, WrapperPayment, StyledP, StyledColoredTitle, StyledTitle, StyledInput, StyledSpan, StyledButton, ImageWrapper, StyledImage};
