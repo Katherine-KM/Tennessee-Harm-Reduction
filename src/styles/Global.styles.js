@@ -114,7 +114,7 @@ p, button {
 
 .p-md {
     // 16px - 18px
-    font-size: var(--p-md-fs)
+    font-size: var(--p-md-fs);
     line-height: clamp(2rem, 5vw, 2.2rem); 
 }
 `;

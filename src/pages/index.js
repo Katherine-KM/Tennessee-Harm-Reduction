@@ -5,6 +5,7 @@ import styled from "styled-components";
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
 import HowWeHelp from "@/components/HowWeHelp/HowWeHelp";
 import WhyDoesItMatter from "@/components/WhyDoesItMatter/WhyDoesItMatter";
+import DonationComponent from "@/components/DonationComponent/DonationComponent"
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -34,9 +35,6 @@ export default function Home() {
           imgAltText="Hero Img"
           imgHeight= "509"
           imgWidth="729"
-          buttonSize='lg'
-          buttonBgColor='var(--clr-primary-400)'
-          buttonFontColor='white'
         />
         <HowWeHelp></HowWeHelp>
         <WhyDoesItMatter
@@ -45,6 +43,7 @@ export default function Home() {
         imgHeight="3783"
         imgWidth="2553"
         ></WhyDoesItMatter>
+        <DonationComponent/>
       </main>
     </>
   );

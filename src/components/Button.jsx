@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const ButtonComponent = styled.button`
+export const ButtonComponent = styled.button`
 font-weight: 700;
-line-height: 2rem : clamp ();
+line-height: 2rem;
 border-radius: 570px;
 padding: 4px 18px; 
 color: white;
