@@ -12,6 +12,24 @@ const Title = styled.h1`
   color: palevioletred;
 `;
 
+const WhiteButton = styled.button`
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 40px;
+  // padding: 0 10px;
+  
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 630px;
+  height: 30px; 
+
+  &:hover { 
+    cursor: pointer;
+  }
+  `
+
 export default function Home() {
   return (
     <>
@@ -39,6 +57,11 @@ export default function Home() {
           buttonFontColor='white'
         />
         <HowWeHelp></HowWeHelp>
+
+        <WhiteButton>
+        Click here to learn more about the meaning of Harm Reduction
+        </WhiteButton>
+
         <WhyDoesItMatter
         imgSrc="/WDIMatter.jpg"
         imgAltText="Why does it matter Img"

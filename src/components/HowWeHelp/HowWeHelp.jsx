@@ -41,8 +41,8 @@ const HowWeHelp = () => {
       <Title></Title>
       <SectionContainer>
         <CardFlexContainer>
-          {cardArray.map((card) => (
-            <Card
+          {cardArray.map((card,idx) => (
+            <Card key={idx}
               titleOne={card.titleOne}
               titleTwo={card.titleTwo}
               fontColor={card.fontColor}

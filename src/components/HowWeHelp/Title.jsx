@@ -34,9 +34,7 @@ const HelpParagraphTextTop = styled.p`
 `
 // In Tennessee, we offer efficient services and programmes that benefit the
 const HelpParagraphTextBottom = styled.p`
-
   margin-bottom: 30px;
-  
 `
 
 

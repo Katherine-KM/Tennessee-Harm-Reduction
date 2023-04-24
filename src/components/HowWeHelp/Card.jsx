@@ -31,8 +31,14 @@ font-size: var(--h4-link-fs);
 `
 
 const CardParagraph = styled.p`
-margin-bottom: 20px; 
+
 font-size: var(--p-sm-fs);
+`
+
+const CardParagraphContainer = styled.div`
+margin-bottom: 20px; 
+width: 200px;
+height: 100px;
 `
 
 const ButtonContainer = styled.div`
@@ -48,22 +54,25 @@ const Card = ({
   fontColor
 }) => {
   return (
-
+  <>
     <CardContainer>
       <CardInnerContainer>
             <H3Title fontColor={fontColor}>{titleOne}</H3Title>
 
             <H3Title2 fontColor={fontColor}>{titleTwo}</H3Title2>
 
-            <CardParagraph>{paragraph}</CardParagraph>
-
+            <CardParagraphContainer>
+              <CardParagraph>{paragraph}</CardParagraph>
+            </CardParagraphContainer>
+            
             <ButtonContainer>
-            <Button>learn more</Button>
+              <Button>learn more</Button>
             </ButtonContainer>
-            </CardInnerContainer>
-   
-    </CardContainer>
 
+        </CardInnerContainer>
+
+    </CardContainer>
+    </>
   )
 }
 
