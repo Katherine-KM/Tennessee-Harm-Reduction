@@ -1,9 +1,40 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+// Reset
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html, 
+body {
+    height: 100%;
+}
 
 :root {
-    
+    font-size: 62.5%
+}
+
+body{
+    text-rendering: optimizeSpeed;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+
+    // CSS Variables
+
     --clr-bgNeutral: rgba(253, 246, 240, 1);
 
     // Button & Darker Text
@@ -21,7 +52,7 @@ const GlobalStyles = createGlobalStyle`
     // headers + link
 
     // 28.8px - 45px
-    --h1-fs: clamp(2.9rem, 5vw, 4.5rem);
+    --h1-fs: clamp(2.9rem, 3.8vw, 4.5rem);
     // 24px - 40px
     --h2-fs: clamp(2.4rem, 5vw, 4rem);
     // 19px - 36px 
@@ -31,13 +62,11 @@ const GlobalStyles = createGlobalStyle`
 
     // Paragraph lg
     // 17px - 20px
-    --p-lg-fs: clamp(1.7rem, 3vw, 2rem); 
+    --p-lg-fs: clamp(1.7rem, 1.5vw, 2rem);  
 
     // Paragraph md
     // 16px - 18px
-    --p-md-fs: clamp(1.6rem, 5vw, 1.8rem);
-
-    font-size: 62.5%
+    --p-md-fs: clamp(1.6rem, 3vw, 1.8rem);
 }
 
 main {
@@ -73,9 +102,13 @@ a, h4 {
     font-size: var(--h4-link-fs)
 }
 
+p, button {
+    line-height: 2rem;
+}
+
 .p-lg {
     // 17px - 20px
-    font-size: var(--p-lg-fs)
+    font-size: var(--p-lg-fs);
     line-height: clamp(2.2rem, 5vw, 2.4rem); 
 }
 
@@ -84,35 +117,7 @@ a, h4 {
     font-size: var(--p-md-fs)
     line-height: clamp(2rem, 5vw, 2.2rem); 
 }
-
-// Reset
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0; 
-    padding: 0;
-}
-
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-html, 
-body {
-    height: 100%;
-}
-
-body{
-    text-rendering: optimizeSpeed;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-}
-`
+`;
 
 export default GlobalStyles;
+

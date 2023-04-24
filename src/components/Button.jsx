@@ -2,50 +2,27 @@ import styled from 'styled-components';
 
 const ButtonComponent = styled.button`
 font-weight: 700;
-font-size: ${props => props.size === 'lg' ? 'var(--p-lg-fs)' :  'var(--p-sm-fs)'};
-// font-size: 20px; 
-line-height: 24px;
-text-align: center; 
+line-height: 2rem : clamp ();
 border-radius: 570px;
-max-width: ${props => props.size === 'lg' ? '320px' : props.size === 'xl' ? '500px': '150px'};
-padding: ${props => 
-    props.size === 'lg' ? '10px 25px'
-    : props.size === 'sm' ? '4px 18px'
-    : '5px 10px'}; 
-color: ${props => props.fontColor};
-background-color: ${props => props.bgColor};
-border: 2px solid ${props =>
-    props.bgColor === 'white' ? 'black'
-    : props.bgColor === 'black' ? 'black'
-    : '#EB8C5B'};
+padding: 4px 18px; 
+color: white;
+background-color: var(--clr-primary-400);
+border: 2px solid var(--clr-primary-400);
     &:hover { 
       cursor: pointer;
     }
-${props => props.styling}
 `
 
-const Button = ({ 
-  type, 
-  className, 
-  id, 
-  onClick, 
-  children, 
-  size, 
-  bgColor, 
-  fontColor,
-  styling
-}) => {
+// Hero and the How We Help Large Button
+export const LgButtonComponent = styled(ButtonComponent)`
+font-size: var(--p-lg-fs);
+line-height: clamp(2.2rem, 5vw, 2.4rem);
+padding: 13px 30px; 
+`
+
+const Button = ({children}) => {
   return (
-    <ButtonComponent
-      type={type ? type : "button"}
-      className={className ? `btn-component ${className}` : "btn-component"}
-      id={id}
-      onClick={onClick}
-      size={size}
-      bgColor={bgColor}
-      fontColor={fontColor}
-      styling={styling}
-    >
+    <ButtonComponent>
       {children}
     </ButtonComponent>
   );
