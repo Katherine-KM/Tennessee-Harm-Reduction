@@ -28,12 +28,34 @@ const MainImageTextContainer = styled.section`
     height: 400px;
     border: 4px solid purple;
     margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
 `
 
 const ImageTextWrapper = styled.div`
-    width: 200px;
+    width: 226px;
     height: 400px;
     border: 2px solid green;
 `
 
-export { NewsMediaContainer, NewsTitleContainer, MainImageTextContainer,ImageTextWrapper }
+const ImageBox = styled.div`
+    width: 226px;
+    height: 185px;
+    border: 2px solid orange;
+    margin-bottom: 20px;
+`
+const TextBox = styled.div`
+    width: 226px;
+    height: 145px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+`
+
+const TagBox = styled.div`
+    width: 226px;
+    height: 30px;
+    border: 2px solid blue;
+`
+
+export { NewsMediaContainer, NewsTitleContainer, MainImageTextContainer,ImageTextWrapper, ImageBox, TextBox, TagBox }
