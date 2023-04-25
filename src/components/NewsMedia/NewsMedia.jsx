@@ -1,8 +1,11 @@
-import { NewsMediaContainer, NewsTitleContainer, MainImageTextContainer, ImageTextWrapper, ImageBox , TextBox, TagBox } from "./NewsMedia.styles"
+import { NewsMediaContainer, NewsTitleContainer, MainImageTextContainer, ImageTextWrapper, ImageBox , TextBox, TagBox, MyImage } from "./NewsMedia.styles"
 
 import { BlogArray } from "./NewsMediaBlogArray";
 
-const NewsMedia = () => {
+const NewsMedia = ({
+    ImgSrc
+}) => {
+
   return (
     <NewsMediaContainer>
         <NewsTitleContainer>
@@ -13,7 +16,7 @@ const NewsMedia = () => {
             {BlogArray.map((blog, idx) => (
                 <ImageTextWrapper>
                 <ImageBox>
-                    {blog.imgSrc}
+                    <MyImage src={blog.imgSrc} width={393} height={277}></MyImage>
                 </ImageBox>
                 <TextBox>
                     {blog.paragraph}
