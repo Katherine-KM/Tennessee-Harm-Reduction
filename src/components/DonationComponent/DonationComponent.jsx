@@ -18,7 +18,7 @@ const DonationComponent = ({text}) => {
         </LeftWrapper>
         <RightWrapper>
             <ImageWrapper>
-                <StyledImage src={'/donateimage.png'} width={393} height={277}></StyledImage>
+                <StyledImage src={'/donateimage.png'} width={393} height={277} alt="Woman Holding Heart Pillow"></StyledImage>
             </ImageWrapper>
         </RightWrapper>
     </DonationComponentContainer>
