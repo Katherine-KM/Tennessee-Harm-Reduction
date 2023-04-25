@@ -52,21 +52,21 @@ body{
     // headers + link
 
     // 28.8px - 45px
-    --h1-fs: clamp(2.9rem, 3.8vw, 4.5rem);
+    --h1-fs: clamp(2.9rem, 5rem, 4.5rem);
     // 24px - 40px
-    --h2-fs: clamp(2.4rem, 5vw, 4rem);
+    --h2-fs: clamp(2.4rem, 4.5rem, 4rem);
     // 19px - 36px 
-    --h3-fs: clamp(1.9rem, 5vw, 3.6rem);
+    --h3-fs: clamp(1.9rem, 4.1rem, 3.6rem);
     // 19px - 24px
-    --h4-link-fs: clamp(1.9rem, 5vw, 2.4rem);
+    --h4-link-fs: clamp(1.9rem, 2.9rem, 2.4rem);
 
     // Paragraph lg
     // 17px - 20px
-    --p-lg-fs: clamp(1.7rem, 1.5vw, 2rem);  
+    --p-lg-fs: clamp(1.7rem, 2.5rem, 2rem);  
 
     // Paragraph md
     // 16px - 18px
-    --p-md-fs: clamp(1.2rem, 1.5vw, 1.8rem);
+    --p-md-fs: clamp(1.6rem, 2rem, 1.8rem);
 }
 
 main {
