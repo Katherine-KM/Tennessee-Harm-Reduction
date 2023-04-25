@@ -1,8 +1,18 @@
-import React from 'react'
+import { NewsMediaContainer, NewsTitleContainer, MainImageTextContainer, ImageTextWrapper } from "./NewsMedia.styles"
 
 const NewsMedia = () => {
   return (
-    <div>NewsMedia</div>
+    <NewsMediaContainer>
+        <NewsTitleContainer>
+            News & Media
+        </NewsTitleContainer>
+
+        <MainImageTextContainer>
+            <ImageTextWrapper>
+                
+            </ImageTextWrapper>
+        </MainImageTextContainer>
+    </NewsMediaContainer>
   )
 }
 
