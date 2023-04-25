@@ -1,5 +1,7 @@
 import { NewsMediaContainer, NewsTitleContainer, MainImageTextContainer, ImageTextWrapper, ImageBox , TextBox, TagBox } from "./NewsMedia.styles"
 
+import { BlogArray } from "./NewsMediaBlogArray";
+
 const NewsMedia = () => {
   return (
     <NewsMediaContainer>
@@ -8,53 +10,21 @@ const NewsMedia = () => {
         </NewsTitleContainer>
 
         <MainImageTextContainer>
-            <ImageTextWrapper>
+            {BlogArray.map((blog, idx) => (
+                <ImageTextWrapper>
                 <ImageBox>
-
+                    {blog.imgSrc}
                 </ImageBox>
                 <TextBox>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas eligendi, voluptates eos cupiditate
+                    {blog.paragraph}
                 </TextBox>
                 <TagBox>
-                    Blog
+                    {blog.tag}
                 </TagBox>
             </ImageTextWrapper>
+            ))}
+            
 
-            <ImageTextWrapper>
-                <ImageBox>
-
-                </ImageBox>
-                <TextBox>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas eligendi, voluptates eos cupiditate
-                </TextBox>
-                <TagBox>
-                    Blog
-                </TagBox>
-            </ImageTextWrapper>
-
-            <ImageTextWrapper>
-                <ImageBox>
-
-                </ImageBox>
-                <TextBox>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas eligendi, voluptates eos cupiditate
-                </TextBox>
-                <TagBox>
-                    Blog
-                </TagBox>
-            </ImageTextWrapper>
-
-            <ImageTextWrapper>
-                <ImageBox>
-
-                </ImageBox>
-                <TextBox>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas eligendi, voluptates eos cupiditate
-                </TextBox>
-                <TagBox>
-                    Blog
-                </TagBox>
-            </ImageTextWrapper>
         </MainImageTextContainer>
     </NewsMediaContainer>
   )

@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { ButtonComponent } from "../Button";
 import Image from "next/image";
 
+
+
 const NewsMediaContainer = styled.section`
     max-width: 100%;
     // margin: auto; 
