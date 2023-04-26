@@ -6,6 +6,9 @@ import HeroComponent from "@/components/HeroComponent/HeroComponent";
 import HowWeHelp from "@/components/HowWeHelp/HowWeHelp";
 import WhyDoesItMatter from "@/components/WhyDoesItMatter/WhyDoesItMatter";
 import DonationComponent from "@/components/DonationComponent/DonationComponent"
+import NewsMedia from "@/components/NewsMedia/NewsMedia";
+
+
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -65,7 +68,8 @@ export default function Home() {
         imgAltText="Why does it matter Img"
         imgHeight="3783"
         imgWidth="2553"
-        ></WhyDoesItMatter>
+        />
+        <NewsMedia/>
         <DonationComponent/>
       </main>
     </>
