@@ -1,10 +1,11 @@
-import { PressReleaseContainer, PressTitle, PressParagraph, ImageContainer, MyImage } from "./PressRelease.styles"
+import { PressReleaseContainer, PressTitle, PressParagraph, ImageContainer, MyImage, PressReleaseInnerContainer } from "./PressRelease.styles"
 
 import { PressImageArray } from "./PressImageArray"
 
 const PressRelease = () => {
   return (
     <PressReleaseContainer>
+        <PressReleaseInnerContainer>
         <PressTitle>
             Press Release
         </PressTitle>
@@ -16,16 +17,17 @@ const PressRelease = () => {
         <ImageContainer>
             {PressImageArray.map((image, idx) => (
             
-                    <MyImage 
+                    <MyImage className="ImageClass"
                     src={image.imgSrc} 
-                    width={1000}
-                    height={100}>
+                    width={image.width}
+                    height={image.height}>
 
                     </MyImage>
             ))}
             
 
         </ImageContainer>
+        </PressReleaseInnerContainer>
     </PressReleaseContainer>
   )
 }

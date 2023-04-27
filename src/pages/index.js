@@ -86,7 +86,7 @@ export default function Home() {
         imgWidth="2553"
         />
         <NewsMedia/>
-        <PressRelease></PressRelease>
+        <PressRelease/>
         <DonationComponent/>
       </main>
     </>

@@ -32,7 +32,6 @@ font-size: var(--h4-link-fs);
 
 const CardParagraph = styled.p`
 
-font-size: var(--p-sm-fs);
 `
 
 const CardParagraphContainer = styled.div`
@@ -42,6 +41,7 @@ height: 100px;
 `
 
 const ButtonContainer = styled.div`
+  margin-top: 30px;
   bottom:40px; 
   right: 60px;
 `
