@@ -5,29 +5,45 @@ const SectionContainer = styled.section`
   width: 100%;
   background-color: green;
   display:flex;
+  flex-direction: column;
+
+  @media (min-width: 1060px) {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
 
 `
 
 const SectionInnerContainer = styled.div`
-  // border: 5px solid purple;
-  // max-height: 400px;
-  // margin: auto;
   width: 100%;
   margin-left: 100px;
   margin-top: 100px;
  
   display:flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+
+
+
+
 `
 
 const LeftContainer = styled.div`
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--clr-bgNeutral);
+font-family: 'Montserrat', sans-serif;
+background-color: var(--clr-bgNeutral);
 
-  width: 50%;
-  display: flex;
+width: 100%;
+display: flex;
+
+  @media (min-width: 1060px) {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--clr-bgNeutral);
+  
+    width: 50%;
+    display: flex;
+}
+
+
 `
 
 const LeftContainerH2 = styled.h2`
@@ -59,8 +75,17 @@ color: var(--clr-primary-400);
 `
 
 const RightContainer = styled.div`
-  width: 50%;
+  width: 100%;
   background-color: red;
+
+  @media (min-width: 1060px) {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--clr-bgNeutral);
+  
+    width: 50%;
+    display: flex;
+}
+
 `
 
 const StyledImg = styled(Image)`
