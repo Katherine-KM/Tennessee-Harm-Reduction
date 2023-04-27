@@ -8,7 +8,7 @@ const SectionContainer = styled.section`
   background-color: #fff;
   display: grid;
 
-  @media (min-width: 1158px) {
+  @media (min-width: 1060px) {
     padding-bottom: 4rem;
     grid-column: 1/4;
     grid-row: 1/4;
@@ -25,7 +25,7 @@ const CardFlexContainer = styled.div`
   column-gap: 2.5rem;
   row-gap: 1.5rem;
 
-  @media (min-width: 1158px) {
+  @media (min-width: 1060px) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5rem;
     max-width: 80%;

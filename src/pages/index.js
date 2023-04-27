@@ -17,20 +17,36 @@ const Title = styled.h1`
 `;
 
 const WhiteButton = styled.button`
+  width: 600px;
+  border: 2px solid black;
   color: black;
   background-color: white;
-  font-size: 20px;
-  margin: auto;
-  margin-bottom: 40px;
-  // padding: 0 10px;
-  
   border-radius: 20px;
-  border: 2px solid black;
-  width: 630px;
-  height: 30px; 
+  margin: 30px auto;
+  font-size: 20px;
+  // margin-bottom: 40px;
+
 
   &:hover { 
     cursor: pointer;
+  }
+
+  @media (min-width: 1060px) {
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    // padding: 0 10px;
+    
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 630px;
+    height: 30px; 
+  
+    &:hover { 
+      cursor: pointer;
+    }
   }
   `
 

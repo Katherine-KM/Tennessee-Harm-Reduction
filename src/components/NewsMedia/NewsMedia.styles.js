@@ -7,29 +7,31 @@ import Image from "next/image";
 const NewsMediaContainer = styled.section`
     max-width: 100%;
     min-height: 49rem;
-    // border: 3px solid blue;
 `
 
 const NewsTitleContainer = styled.h2`
-// border: 3px solid red;
     text-align: center;
     width: 25%;
     margin: 50px auto;
 `
 
 const MainImageTextContainer = styled.section`
-// border: 4px solid purple;
-    width: 1000px;
-    height: 400px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    display: flex;
-    gap: 50px;
+    display: grid;
+    padding-bottom: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    width: 500px;
 
     @media (min-width: 1060px) {
-        // display: flex;
-        // flex-direction: column;
+        width: 1000px;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        display: flex;
+        gap: 50px;
     }
+  
 `
 
 const ImageTextWrapper = styled.div`
