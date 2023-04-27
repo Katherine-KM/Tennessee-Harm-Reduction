@@ -8,7 +8,7 @@ import WhyDoesItMatter from "@/components/WhyDoesItMatter/WhyDoesItMatter";
 import DonationComponent from "@/components/DonationComponent/DonationComponent"
 import NewsMedia from "@/components/NewsMedia/NewsMedia";
 
-
+import PressRelease from "@/components/PressSlate/PressComponent";
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -86,6 +86,7 @@ export default function Home() {
         imgWidth="2553"
         />
         <NewsMedia/>
+        <PressRelease/>
         <DonationComponent/>
       </main>
     </>
