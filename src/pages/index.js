@@ -8,6 +8,8 @@ import WhyDoesItMatter from "@/components/WhyDoesItMatter/WhyDoesItMatter";
 import DonationComponent from "@/components/DonationComponent/DonationComponent"
 import NewsMedia from "@/components/NewsMedia/NewsMedia";
 
+import PressRelease from "@/components/PressRelease/PressRelease";
+
 
 
 const Title = styled.h1`
@@ -70,6 +72,7 @@ export default function Home() {
         imgWidth="2553"
         />
         <NewsMedia/>
+        <PressRelease/>
         <DonationComponent/>
       </main>
     </>
