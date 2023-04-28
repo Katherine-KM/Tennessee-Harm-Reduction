@@ -16,7 +16,11 @@ const NewsMedia = ({
             {BlogArray.map((blog, idx) => (
                 <ImageTextWrapper>
                 <ImageBox>
-                    <MyImage src={blog.imgSrc} width={393} height={277}></MyImage>
+                    <MyImage 
+                    key={idx}
+                    src={blog.imgSrc} 
+                    width={393} 
+                    height={277}></MyImage>
                 </ImageBox>
                 <TextBox>
                     {blog.paragraph}

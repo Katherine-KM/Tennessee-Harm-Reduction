@@ -10,13 +10,22 @@ const CardContainer = styled.div`
     text-align: center;
     letter-spacing: -0.015em;
     position: relative;  
+
 `
 
 const CardInnerContainer = styled.div`
 
+
+
+
+@media (min-width: 560px){
+
+
 display: flex; 
 flex-direction: column; 
-padding: 20px
+padding: 20px;
+
+}
 `
 
 const H3Title = styled.h3`
@@ -24,6 +33,7 @@ color: ${props => props.fontColor};
 // margin-top: 10px; 
 font-size: var(--h4-link-fs);
 `
+
 const H3Title2 = styled(H3Title)`
 margin-bottom: 6px;
 line-height: 42px; 
