@@ -8,8 +8,9 @@ const SectionContainer = styled.section`
   background-color: #fff;
   display: grid;
 
-  
-  @media (min-width: 1060px) {
+
+
+  @media (min-width: 1158px) {
     padding-bottom: 4rem;
     grid-column: 1/4;
     grid-row: 1/4;
@@ -19,12 +20,15 @@ const SectionContainer = styled.section`
 
 const CardFlexContainer = styled.div`
 
-display: flex;
+
+display:flex;
 flex-direction: column;
- 
+row-gap: 1.5rem;
+max-width: 90%;
+margin: 0 auto;
+width: 80%;
 
-@media (min-width: 560px){
-
+ @media (min-width:351px){
   display: grid;
   grid-template-columns: 270px 270px;
   justify-content: center;
@@ -32,10 +36,9 @@ flex-direction: column;
   max-width: 90%;
   column-gap: 2.5rem;
   row-gap: 1.5rem;
-}
+ }
 
-
-  @media (min-width: 1060px) {
+  @media (min-width: 1158px) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5rem;
     max-width: 80%;
