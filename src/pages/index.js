@@ -17,6 +17,20 @@ const Title = styled.h1`
 `;
 
 const WhiteButton = styled.button`
+  width: 200px;
+  border:none;
+  border-radius: 20px;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  margin: 30px auto;
+  font-size: 20px;
+
+  &:hover { 
+    cursor: pointer;
+  }
+
+@media (min-width: 600px){
   width: 600px;
   border: 2px solid black;
   color: black;
@@ -24,12 +38,12 @@ const WhiteButton = styled.button`
   border-radius: 20px;
   margin: 30px auto;
   font-size: 20px;
-  // margin-bottom: 40px;
-
 
   &:hover { 
     cursor: pointer;
   }
+}
+  
 
   @media (min-width: 1060px) {
     color: black;

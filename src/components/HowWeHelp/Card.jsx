@@ -11,26 +11,30 @@ const CardContainer = styled.div`
     letter-spacing: -0.015em;
     position: relative;  
 
+
+  
 `
 
 const CardInnerContainer = styled.div`
 
 
-
+margin: 0 auto;
+padding-top:30px;
 
 @media (min-width: 560px){
+  display: flex;
+  flex-direction: column;
 
-
-display: flex; 
-flex-direction: column; 
-padding: 20px;
+  display: flex; 
+  flex-direction: column; 
+  padding: 20px;
 
 }
 `
 
 const H3Title = styled.h3`
 color: ${props => props.fontColor};
-// margin-top: 10px; 
+
 font-size: var(--h4-link-fs);
 `
 
@@ -51,9 +55,15 @@ height: 100px;
 `
 
 const ButtonContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 40px;
   bottom:40px; 
   right: 60px;
+
+  @media (min-width: 351px){
+    margin-top: 30px;
+    bottom:40px; 
+    right: 60px;
+  }
 `
 
 
