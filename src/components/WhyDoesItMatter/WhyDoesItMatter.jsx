@@ -16,24 +16,35 @@ const SectionContainer = styled.section`
 `
 
 const SectionInnerContainer = styled.div`
-  width: 100%;
-  margin-left: 100px;
-  margin-top: 100px;
- 
-  display:flex;
-  flex-direction: column;
 
 
-
+  @media (min-width: 351px){
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 100px;
+   
+    display:flex;
+    flex-direction: column;
+  }
 
 `
 
 const LeftContainer = styled.div`
-font-family: 'Montserrat', sans-serif;
-background-color: var(--clr-bgNeutral);
+  background-color: var(--clr-bgNeutral);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  width: 100%;
+  text-align:center;
+  
 
-width: 100%;
-display: flex;
+  @media (min-width: 351px){
+    background-color: var(--clr-bgNeutral);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 100%;
+    
+  }
+
 
   @media (min-width: 1060px) {
     font-family: 'Montserrat', sans-serif;
