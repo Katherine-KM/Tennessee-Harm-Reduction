@@ -25,18 +25,28 @@ const InnerTextContainer = styled.div`
   padding: 50px;
 `;
 
+const InnerTextContainerH1 = styled.h1`
+  margin-bottom: 20px;
+`
+
+const InnerTextContainerP = styled.p`
+  margin-bottom: 40px;
+  font-size: var(--p-md-fs);
+`
+
 const InnerImageContainerComponent = ({h1Text, pText, buttonSize, buttonBgColor, buttonFontColor, buttonText, buttonText2}) => {
   return (
     <InnerImageContainer>
       <TextContainer>
         <InnerTextContainer>
-          <h1 style={{ fontSize: "var(--h1-fs)", marginBottom: "20px" }}>
-            {h1Text}
-          </h1>
+          <InnerTextContainerH1>
+          {h1Text}
+          </InnerTextContainerH1>
 
-          <p style={{ fontSize: "var(--p-md-fs)", marginBottom: "40px" }}>
-            {pText}
-          </p>
+          <InnerTextContainerP>
+          {pText}
+          </InnerTextContainerP>
+          
           <Button
             size={buttonSize}
             bgColor={buttonBgColor}
