@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Button from "../Button";
 import Image from "next/image";
 
+import { ButtonComponent } from "../Button";
+
 const MoreInfoContainer = styled.div`
     width: 100%;
     height: 100px;
@@ -35,18 +37,14 @@ const MoreInformationComp = () => {
             For more information, feel free to
             </MoreInfoText>
               
-              <Button
-              size='xl'
-              bgColor='var(--clr-primary-400)'
-              fontColor='white'>
-                Contact us
+              <Button>
+                contact us
               </Button> 
 
+      
           </MoreInfoInnerContainer>
           
-        </MoreInfoContainer>
-
-          
+        </MoreInfoContainer> 
     </>
   )
 }

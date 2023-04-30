@@ -1,3 +1,5 @@
+import { LgButtonComponent } from "../Button";
+
 import styled from "styled-components";
 import Button from "../Button";
 import Image from "next/image";
@@ -110,13 +112,11 @@ const ServiceHeroComponent = (
           <OrangeSpan> {coloredText} </OrangeSpan>
           <HeroH2>{h1Text2}</HeroH2>
           <StyledHeroPText>{pText}</StyledHeroPText>
-          <Button 
-            size={buttonSize}
-            bgColor={buttonBgColor}
-            fontColor = {buttonFontColor}
-          > 
+
+          <LgButtonComponent>
             {buttonText}
-          </Button>
+          </LgButtonComponent>
+         
         </HeroDetailsContainer>
       </HeroContainer1>
       <HeroContainer2>

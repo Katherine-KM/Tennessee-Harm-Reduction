@@ -34,7 +34,12 @@ const InnerTextContainerP = styled.p`
   font-size: var(--p-md-fs);
 `
 
-const InnerImageContainerComponent = ({h1Text, pText, buttonSize, buttonBgColor, buttonFontColor, buttonText, buttonText2}) => {
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const InnerImageContainerComponent = ({h1Text, pText, buttonText, buttonText2}) => {
   return (
     <InnerImageContainer>
       <TextContainer>
@@ -46,24 +51,18 @@ const InnerImageContainerComponent = ({h1Text, pText, buttonSize, buttonBgColor,
           <InnerTextContainerP>
           {pText}
           </InnerTextContainerP>
-          
-          <Button
-            size={buttonSize}
-            bgColor={buttonBgColor}
-            fontColor={buttonFontColor}
-          >
-            {buttonText}
-          </Button>
 
-          {buttonText2.length > 0 && 
-          <Button
-            styling = 'display: block; margin: 0.5rem auto; '
-            size={buttonSize}
-            bgColor={buttonBgColor}
-            fontColor={buttonFontColor}
-          >
-            {buttonText2}
-          </Button>}
+          <ButtonContainer>
+            <Button>
+              {buttonText}
+            </Button>
+          </ButtonContainer>
+          
+          <ButtonContainer>
+            <Button>
+              {buttonText}
+            </Button>
+          </ButtonContainer>
         </InnerTextContainer>
       </TextContainer>
     </InnerImageContainer>
