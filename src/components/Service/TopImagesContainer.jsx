@@ -7,9 +7,6 @@ const MainTopContainer = styled.div`
     display:flex;
     width: 100%;
     min-height: 500px;
-    // background-color: blue;
-    // border: 6px blue solid;
-
     margin-bottom: 80px;
     padding: 40px;
     
@@ -18,14 +15,12 @@ const MainTopContainer = styled.div`
 const LeftHalfContainer = styled.div`
     width: 50%;
     min-height: 500px;
-    // background-color: red;
+
 `
 
 const RightHalfContainer = styled.div`
     width: 50%;
     min-height: 500px;
-
-    // background-color: green;
 `
 
 const InnerImageContainer = styled.div`
