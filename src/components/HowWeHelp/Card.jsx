@@ -10,24 +10,32 @@ const CardContainer = styled.div`
     text-align: center;
     letter-spacing: -0.015em;
     position: relative;  
+
 `
-
 const CardInnerContainer = styled.div`
+margin: 0 auto;
+padding-top:30px;
 
-display: flex; 
-flex-direction: column; 
-padding: 20px
+@media (min-width: 560px){
+  display: flex;
+  flex-direction: column;
+
+  display: flex; 
+  flex-direction: column; 
+  padding: 20px;
+  }
 `
 
 const H3Title = styled.h3`
 color: ${props => props.fontColor};
-// margin-top: 10px; 
+
 font-size: var(--h4-link-fs);
 `
+
 const H3Title2 = styled(H3Title)`
-margin-bottom: 6px;
-line-height: 42px; 
-font-size: var(--h4-link-fs);
+  margin-bottom: 6px;
+  line-height: 42px; 
+  font-size: var(--h4-link-fs);
 `
 
 const CardParagraph = styled.p`
@@ -35,15 +43,21 @@ const CardParagraph = styled.p`
 `
 
 const CardParagraphContainer = styled.div`
-margin-bottom: 20px; 
-width: 200px;
-height: 100px;
+  margin-bottom: 20px; 
+  width: 200px;
+  height: 100px;
 `
 
 const ButtonContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 40px;
   bottom:40px; 
   right: 60px;
+
+  @media (min-width: 351px){
+    margin-top: 30px;
+    bottom:40px; 
+    right: 60px;
+  }
 `
 
 

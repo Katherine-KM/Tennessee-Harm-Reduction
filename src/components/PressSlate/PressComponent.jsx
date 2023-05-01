@@ -17,7 +17,9 @@ const PressRelease = () => {
         <ImageContainer>
             {PressImageArray.map((image, idx) => (
             
-                    <MyImage className="ImageClass"
+                    <MyImage 
+                    key={idx}
+                    className="ImageClass"
                     src={image.imgSrc} 
                     width={image.width}
                     height={image.height}>
