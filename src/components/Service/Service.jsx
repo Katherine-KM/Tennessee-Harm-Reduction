@@ -52,13 +52,7 @@ const Service = () => {
 
         ))}
         
-        </GridContainer>
-        
-
-    
-       
-
-      
+        </GridContainer>      
     </>
   )
 }

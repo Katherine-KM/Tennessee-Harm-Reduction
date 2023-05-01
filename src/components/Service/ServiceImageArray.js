@@ -14,7 +14,7 @@ export const ServiceArray = [
         h2Text: 'Supply by Mail',
         paraText: "Sending free NARCAN kits, syringes, and fentanyl test strips by mail within whole United state to improving the health and welfare of Tennesseans who use drugs.",
         buttonText1: 'Basic Packages',
-        buttonText2: '.',
+        buttonText2: 'Basic Packages',
         
     },
     {
