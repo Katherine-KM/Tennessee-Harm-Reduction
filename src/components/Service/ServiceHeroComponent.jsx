@@ -98,9 +98,6 @@ const ServiceHeroComponent = (
     imgHeight,
     imgWidth,
     buttonText,
-    buttonSize,
-    buttonBgColor,
-    buttonFontColor
 }) => {
   return (
     <HeroComponentContainer imgSrc={imgSrc}>
