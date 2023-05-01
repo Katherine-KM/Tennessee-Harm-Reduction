@@ -11,6 +11,7 @@ import NewsMedia from "@/components/NewsMedia/NewsMedia";
 import PressRelease from "@/components/PressSlate/PressComponent";
 import AboutUsComponent from "@/components/AboutUsComponent/AboutUsComponent";
 import WeCanMakeADifferenceComponent from "@/components/WeCanMakeADifferenceComponent/WeCanMakeADifferenceComponent";
+import FullWidthImgComponent from "@/components/FullWidthImgComponent/FullWidthImgComponent";
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -106,6 +107,7 @@ export default function Home() {
         <DonationComponent/>
         <WeCanMakeADifferenceComponent/>
         <AboutUsComponent/>
+        <FullWidthImgComponent/>
       </main>
     </>
   );
