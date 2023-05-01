@@ -4,20 +4,13 @@ import Button from "@/components/Button";
 
 
 import ServiceHeroComponent from "@/components/Service/ServiceHeroComponent";
-import ResourcesHero from "@/components/Resources/ResourcesHero";
 
-
-import TopImagesContainer from "@/components/Service/TopImagesContainer";
-import BottomImagesContainer from "@/components/Service/BottomImagesContainer";
 import MoreInformationComp from "@/components/Service/MoreInformationComp";
 
 
-const MainServiceContainer = styled.div`
-  border: 10px solid red;
-  background-color: red;
-  width: 500px;
-  height:500px;
-`
+import Service from "@/components/Service/Service";
+
+
 
 const service = () => {
   return (
@@ -43,53 +36,12 @@ const service = () => {
          imgWidth="729"
          buttonSize='lg'
          buttonBgColor='var(--clr-primary-400)'
-         buttonFontColor='white'></ServiceHeroComponent>
+         buttonFontColor='white'>
 
-        
-          <TopImagesContainer
-          // Upper left card
-           h1Text1='Provide Supply'
-           paraText1="A demand-driven or a participant-driven model travel around  Tennessee doing outreach harm reduction supply"
-           buttonText1='FREE access of Syringes'
-           buttonText2='FREE access of Naloxone'
+         </ServiceHeroComponent>
 
-           buttonSize='lg'
-           buttonBgColor='var(--clr-primary-400)'
-           buttonFontColor='yellow'
-
-           // Upper right card
-           h1Text2='Supply by Mail'
-           paraText2=" Sending free NARCAN kits, syringes, and fentanyl test strips by mail within whole United state to improving the health and welfare of Tennesseans who use drugs."
-           buttonText3='FREE access of Syringes'
-           buttonText4='FREE access of Naloxone'
-
-         
-       
-           ></TopImagesContainer>
-
-
-
-        <BottomImagesContainer
-        // Lower left card
-        h1Text3='Treatment program'
-        paraText3="Connect with different supporting programs and committee around Tennessee regarding harm reduction support."
-        buttonText1='FREE access of Syringes'
-        buttonText2='FREE access of Naloxone'
-
-        buttonSize='lg'
-        buttonBgColor='var(--clr-primary-400)'
-        buttonFontColor='yellow'
-
-        // Lower right card
-        h1Text4='Information centre'
-        paraText4="Getting the most update information, including getting resources on safer drug use and knowing how to respond in the event of an overdose."
-       
-
-       
-        ></BottomImagesContainer>
-        
-         
-          <MoreInformationComp></MoreInformationComp>
+          <Service/>
+          <MoreInformationComp/>
      
       </main>
     </>
@@ -99,20 +51,3 @@ const service = () => {
 export default service;
 
 
-
-// -----testing starts here-----------
-
-
-
-// const service = () => {
-//   return (
-//     <>
-   
-//       <ResourcesHero
-      
-//       ></ResourcesHero>
-//     </>
-//   )
-// }
-
-// export default service
