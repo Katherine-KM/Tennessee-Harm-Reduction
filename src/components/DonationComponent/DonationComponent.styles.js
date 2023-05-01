@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const DonationComponentContainer = styled.section`
     max-width: 90%;
-    margin: auto; 
-    min-height: 49rem;
+    margin: 2.5rem auto; 
+    min-height: fit-content;
     display: flex;
     align-items: center; 
     flex-direction: column-reverse; 
@@ -93,14 +93,13 @@ const StyledButton = styled(ButtonComponent)`
 `
 
 const ImageWrapper = styled.div` 
-    margin: 5.5rem auto; 
 `
 
 const StyledImage = styled(Image)`
     display: block; 
     height: 100%; 
     width: 100%; 
-    margin: 0 auto; 
+    margin-left: auto; 
 
     @media (min-width: 1060px) {
         width: 70%;

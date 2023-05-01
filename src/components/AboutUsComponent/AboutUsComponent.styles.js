@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 const AboutUsContainer = styled.section`
     width: 90%; 
-    margin: auto; 
-    padding: 2.5rem 0; 
+    margin: 2.5rem auto; 
     min-height: fit-content; 
 `
 
