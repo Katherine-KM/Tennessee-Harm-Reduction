@@ -1,11 +1,9 @@
-import styled from "styled-components";
 import Head from "next/head";
-import Button from "@/components/Button";
-
 
 import ResourcesHero from "@/components/Resources/ResourcesHero"
-import MidSectionContainer from "@/components/Resources/MidSectionContainer";
 
+import Resources from "@/components/Resources/Resources";
+import MoreInformationComp from "@/components/Service/MoreInformationComp";
 
 const resources = () => {
   return (
@@ -33,7 +31,8 @@ const resources = () => {
     buttonFontColor='white'
     ></ResourcesHero>
 
-    <MidSectionContainer></MidSectionContainer>
+    <Resources/>
+    <MoreInformationComp/>
     </main>
     </>
   )

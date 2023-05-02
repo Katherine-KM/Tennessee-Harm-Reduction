@@ -13,6 +13,7 @@ const MoreInfoContainer = styled.div`
     align-items: center;
     margin-bottom: 200px;
     
+    
 `
 
 const MoreInfoText =styled.span`
