@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
+import HowWeHelp from "@/components/HowWeHelp/HowWeHelp";
 
 export default function whatisharmreduction() {
     return (
@@ -22,6 +23,7 @@ export default function whatisharmreduction() {
             imgHeight= "509"
             imgWidth="729"
           />
+          <HowWeHelp /> 
         </main>
       </>
     );
