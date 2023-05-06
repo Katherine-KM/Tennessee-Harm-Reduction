@@ -1,6 +1,7 @@
 import Head from "next/head";
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
 import HowWeHelp from "@/components/HowWeHelp/HowWeHelp";
+import AccessAndTreatmentComponent from "@/components/AccessAndTreatmentComponent/AccessAndTreatmentComponent";
 
 export default function whatisharmreduction() {
     return (
@@ -24,6 +25,14 @@ export default function whatisharmreduction() {
             imgWidth="729"
           />
           <HowWeHelp /> 
+
+          <AccessAndTreatmentComponent 
+            coloredTitleText = "Syringe"
+            titleText ="access in Tennessee"
+            styledPText = "Syringes are legal to possess in Tennessee as there are two Tennessee laws offer limited immunity from Possession of Drug Paraphernalia charges."
+            pText = "Pharmacies don’t need prescriptions to dispense syringes in Tennessee. However, many pharmacists refuse to sell syringes without prescriptions. We provide free access to syringe."
+            imageDetails = {{URL: '/syringe-whr.png', alt: 'Syringe'}}
+          />
         </main>
       </>
     );
