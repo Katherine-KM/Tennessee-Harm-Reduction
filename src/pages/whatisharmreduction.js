@@ -33,6 +33,14 @@ export default function whatisharmreduction() {
             pText = "Pharmacies don’t need prescriptions to dispense syringes in Tennessee. However, many pharmacists refuse to sell syringes without prescriptions. We provide free access to syringe."
             imageDetails = {{URL: '/syringe-whr.png', alt: 'Syringe'}}
           />
+
+<AccessAndTreatmentComponent 
+            coloredTitleText = "Naloxone"
+            titleText ="access in Tennessee"
+            styledPText = "Naloxone is a safe and effective rescue medication that reverses the effects of opioids and saves lives."
+            pText = "You may access Naloxone by 4 ways, including joining harm reduction program, Syringe exchange, Tennessee’s anti-drug coalitions and prevention coalitions and pharmacy with a prescription or a CoverRX. We provide free access Naloxone."
+            imageDetails = {{URL: '/naloxone-whr.png', alt: 'Narcan Nasal Spray'}}
+          />
         </main>
       </>
     );
