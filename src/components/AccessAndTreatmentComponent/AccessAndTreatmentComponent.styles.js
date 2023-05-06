@@ -42,6 +42,7 @@ const WrapperDetails = styled.div`
 const StyledColorTitle = styled.h2`
     color: var(--clr-primary-200);
     display: inline-block;  
+    white-space: pre; 
 `
 
 const StyledTitle = styled.h2`

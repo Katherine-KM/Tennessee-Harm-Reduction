@@ -7,7 +7,9 @@ const AccessAndTreatmentComponent = ({coloredTitleText, titleText, styledPText, 
     <AccessAndTreatmentContainer> 
         <LeftWrapper>
             <WrapperDetails>
-                <StyledColorTitle>{coloredTitleText}</StyledColorTitle> <StyledTitle>{titleText}</StyledTitle>
+                <StyledColorTitle>{`${coloredTitleText}`}</StyledColorTitle>
+                
+                <StyledTitle>{titleText}</StyledTitle>
                 <StyledBoldP>{styledPText}</StyledBoldP>
                 <StyledP>{pText}</StyledP>
                 <Button> learn more </Button>
