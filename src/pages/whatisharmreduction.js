@@ -2,6 +2,7 @@ import Head from "next/head";
 import HeroComponent from "@/components/HeroComponent/HeroComponent";
 import HowWeHelp from "@/components/HowWeHelp/HowWeHelp";
 import AccessAndTreatmentComponent from "@/components/AccessAndTreatmentComponent/AccessAndTreatmentComponent";
+import MoreInformationComp from "@/components/Service/MoreInformationComp";
 
 export default function whatisharmreduction() {
     return (
@@ -49,6 +50,7 @@ export default function whatisharmreduction() {
             pText = "Medication-assisted treatment (Mat) refers to the use of medications with behavioral therapies and counseling to treat substance use disorders — namely, opioid use disorder (OUD) and, to a lesser extent, alcohol use disorder. More recently, the approach has been used to treat stimulant use disorder in Canada."
             imageDetails = {{URL: '/treatment-whr.png', alt: 'Medicine'}}
           />
+          <MoreInformationComp/>
         </main>
       </>
     );
