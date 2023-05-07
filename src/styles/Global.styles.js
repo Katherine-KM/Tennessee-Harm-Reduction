@@ -52,7 +52,7 @@ body{
     // headers + link
 
     // 28.8px - 45px
-    --h1-fs: clamp(2.9rem, 5rem, 4.5rem);
+    --h1-fs: clamp(2.9rem, 4.6rem, 4.5rem);
     // 24px - 40px
     --h2-fs: clamp(2.4rem, 4.5rem, 4rem);
     // 19px - 36px 
@@ -83,13 +83,13 @@ h1, h2, h3 {
 h1 {
     // 28.8px - 45px
     font-size: var(--h1-fs);
-    line-height: clamp(3.2rem, 5vw, 5.1rem); 
+    line-height: clamp(3.4rem, 6rem, 5.1rem); 
 }
 
 h2 {
     // 24px - 40px
     font-size: var(--h2-fs);
-    line-height: clamp(3.1rem, 5vw, 5rem); 
+    line-height: clamp(3.1rem, 5.1rem, 5rem); 
 }
 
 h3 {
@@ -109,13 +109,13 @@ p, button {
 .p-lg {
     // 17px - 20px
     font-size: var(--p-lg-fs);
-    line-height: clamp(2.2rem, 5vw, 2.4rem); 
+    line-height: clamp(2.2rem, 3rem, 2.4rem); 
 }
 
 .p-md {
     // 16px - 18px
     font-size: var(--p-md-fs);
-    line-height: clamp(2rem, 5vw, 2.2rem); 
+    line-height: clamp(2rem, 3rem, 2.2rem); 
 }
 `;
 
