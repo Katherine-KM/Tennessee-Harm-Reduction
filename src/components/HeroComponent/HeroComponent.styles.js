@@ -2,37 +2,59 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const HeroComponentContainer = styled.section`
-  background: linear-gradient(100deg, rgba(0,0,0,0.9), rgba(0,0,0,0.15)), no-repeat url(${props => props.imgSrc});
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.15)),
+    no-repeat url(${(props) => props.imgSrc});
   background-size: cover;
   height: fit-content;
-  display: flex; 
+  display: flex;
   width: 100%;
   min-height: 500px;
+  text-align: center; 
 
   @media (min-width: 1060px) {
-    background-image: none; 
-    background-color: #F7D5BA38;
+    text-align: left;
+    background-image: none;
+    background-color: ${(props) =>
+      props.bgColor ? props.bgColor : "var(--clr-bgNeutral)"};
     min-height: 300px;
   }
+`;
+
+const HeadingWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+
+    @media (min-width: 1060px) {
+      justify-content: start; 
+    }
+`;
+
+const StyledTitle = styled.h1`
+    white-space: pre-wrap;
+`;
+
+const StyledColorTitle = styled(StyledTitle)`
+  color: var(--clr-primary-400);
 `;
 
 const LeftWrapper = styled.div`
   display: flex;
   width: 100%;
-  
+
   @media (min-width: 1060px) {
     width: 50%;
   }
-`
+`;
 
 const RightWrapper = styled.div`
-  display: none; 
+  display: none;
 
   @media (min-width: 1060px) {
-    display: block; 
-    width: 50%; 
+    display: block;
+    width: 50%;
   }
-`
+`;
 
 const HeroDetailsContainer = styled.div`
   width: min(95%, 580px);
@@ -40,25 +62,31 @@ const HeroDetailsContainer = styled.div`
   color: white;
 
   @media (min-width: 1060px) {
-    color: black; 
+    color: black;
   }
 
   @media (min-width: 400px) {
     width: min(80%, 580px);
   }
-`
-const StyledSpan = styled.span`
-  color: #f3b088;
-  display: block;
 `;
 
 const StyledImg = styled(Image)`
   width: 100%;
   height: 100%;
-`
+`;
 
 const StyledHeroPText = styled.p`
-  margin: 20px 0 25px 0;
-`
+  margin: 1rem 0 2.5rem 0;
+`;
 
-export {HeroComponentContainer, LeftWrapper, RightWrapper, HeroDetailsContainer, StyledSpan, StyledImg, StyledHeroPText}
+export {
+  HeroComponentContainer,
+  LeftWrapper,
+  RightWrapper,
+  HeroDetailsContainer,
+  StyledImg,
+  StyledHeroPText,
+  HeadingWrapper,
+  StyledTitle,
+  StyledColorTitle
+};
