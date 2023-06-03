@@ -3,44 +3,112 @@ import Image from "next/image";
 
 // Hero Image at the top
 const HeroImage = styled(Image)`
+  width: 100%;
   height: 204px;
   margin-bottom: 40px;
-  width: 100%;
 `;
 
 // Contains image, about us section, contact at the top
 const MainTopSectionContainer = styled.section`
-  margin: 0 auto;
-  `;
-  
-  // contains about us and contact section
-  const TopContainer = styled.div`
   width: 100%;
+  margin-bottom: 550px;
+
+  @media (min-width: 400px) {
+    margin-bottom: 480px;
+  }
+
+  @media (min-width: 520px) {
+    margin-bottom: 400px;
+  }
+
+  @media (min-width: 680px) {
+    margin-bottom: 180px;
+  }
+`;
+
+// contains about us and contact section
+const TopContainer = styled.div`
   height: 80rem;
+
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 769px) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 80%;
+  }
+
   margin-bottom: 50px;
 `;
 // contains and centers top container
 const InnerTopContainer = styled.section`
-  width: 80%;
-  margin: 0 auto;
+  @media (min-width: 320px) {
+  }
+  @media (min-width: 769px) {
+  }
+
 `;
 
 // Entire about us section container
 const AboutUsMainContainer = styled.section`
   display: flex;
+
+  @media (min-width: 320px) {
+    text-align: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
+  @media (min-width: 769px) {
+    text-align: inherit;
+    width: 100%;
+
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 760px) {
+    flex-direction: row;
+  }
+
+  width: 100%;
+
 `;
 
 // Only contains title and paragraph for about us section
 const AboutUsLeftContainer = styled.div`
+  @media (min-width: 320px) {
+    width: auto;
+  }
+
+  @media (min-width: 703px) {
+    width: 703px;
+    width: auto;
+  }
+
+  @media (min-width: 760px) {
+    width: 50%;
+  }
   width: 50%;
   height: 100px;
 `;
 
 // Social media icon container
 const AboutUsRightContainer = styled.div`
-  width: 50%;
   height: 100px;
-  margin-left: 440px;
+
+  @media (min-width: 320px) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 769px) {
+    width: 10%;
+  }
+
 `;
 
 // Circular social media icon - Facebook
@@ -75,6 +143,12 @@ const MailImage = styled(Image)`
 
 // Orange "About" text
 const AboutUsOrangeTitle = styled.h3`
+  @media (min-width: 320px) {
+    text-align: center;
+  }
+
+  @media (min-width: 769px) {
+  }
   color: orange;
   display: inline;
   margin-right: 10px;
@@ -93,23 +167,37 @@ const AboutUsBoldText = styled.p`
 
 // paragraph for "About us" section
 const AboutUsParagraph = styled.p`
-  font-size: var(--p-md-fs);
-  line-height: clamp(2.7rem, 5vw, 2.2rem);
   margin-bottom: 40px;
-  width: 1138px;
-//   border: 5px solid red;
+  @media (min-width: 320px) {
+  }
+
+  @media (min-width: 321px) {
+    font-size: var(--p-md-fs);
+    width: 100%;
+  }
+
+  @media (min-width: 1260px) {
+    font-size: var(--p-md-fs);
+  }
+
 `;
 
 // Contact form container
 const FormContainer = styled.section`
-  border: 3px solid black;
-  width: 1123px;
-  height: 520px;
+  @media (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+
+    height: 640px;
+    border: 3px solid black;
+  }
 `;
 // Centers inner contact form elements
 const Form = styled.section`
-  margin: 0 auto;
-  width: 80%;
+  @media (min-width: 320px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 
 // Form bold title
@@ -120,32 +208,55 @@ const FormTitle = styled.h3`
 // sets first/last name containers into a row
 const FlexFirstLastWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
+  margin: 0 auto;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
 `;
 
 // span to create space in between containers
 const NamesFieldSpaceSpan = styled.span`
-  width: 40px;
+  @media (min-width: 769px) {
+    width: 40px;
+  }
 `;
 
 // input field for both first/last names
 const FirstLastNamesField = styled.input`
-  width: 50%;
+  width: 80%;
   height: 40px;
+  margin-bottom: 10px;
   border: 1px solid black;
+
+  @media (min-width: 769px) {
+    margin-bottom: 20px;
+  }
 `;
 
 // input field for email address
 const EmailAddressField = styled.input`
-  width: 891px;
+  width: 80%;
+  margin: 0 auto;
   height: 40px;
   border: 1px solid black;
   margin-bottom: 20px;
+
+  @media (min-width: 891px) {
+    width: 100%;
+  }
 `;
 
 // main text box for contact form in "About us" section
 const MessageField = styled.textarea`
-  width: 891px;
+  width: 80%;
+  margin: 0 auto;
+  @media (min-width: 891px) {
+    width: 100%;
+  }
   height: 202px;
   border: 1px solid black;
   margin-bottom: 15px;
@@ -157,8 +268,13 @@ const RegionMainContainer = styled.section``;
 // Outter top container for left map text and right orange map
 const RegionTopContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 80%;
   margin: 0 auto;
+
+  @media (min-width: 850px) {
+    flex-direction: row;
+  }
 `;
 
 // Inner top container for left map text
@@ -198,15 +314,18 @@ const RegionNormalText = styled.p`
 
 // Orange map image
 const OrangeMapImage = styled(Image)`
-  width: 487px;
+  width: 300px;
   height: 332px;
+
+  @media (min-width: 400px) {
+    width: 487px;
+  }
 `;
 
 // Red map image
 const RedMapImage = styled(Image)`
   width: 757px;
   height: 211px;
-  //   border: 3px solid blue;
 `;
 
 // Container for red map image
@@ -228,7 +347,6 @@ const SixImagesContainer = styled.div`
 
 // six logo images
 const SixImages = styled(Image)`
-  //   border: 6px solid red;
   width: 100%;
   height: 211px;
 `;
