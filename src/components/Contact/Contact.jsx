@@ -51,6 +51,7 @@ const Contact = () => {
           src={"/ContactImgs/ContactHero.png"}
           width={3293}
           height={3277}
+          alt="Contact hero image at top of page"
         ></HeroImage>
         <TopContainer>
           <InnerTopContainer>
@@ -70,7 +71,6 @@ const Contact = () => {
                   width={3293}
                   height={3277}
                 ></FacebookImage>
-
 
                 <InstagramImage
                   src={"/ContactImgs/ContactInstagram.png"}
@@ -95,7 +95,6 @@ const Contact = () => {
                   width={3293}
                   height={3277}
                 ></MailImage>
-
               </AboutUsRightContainer>
             </AboutUsMainContainer>
 
